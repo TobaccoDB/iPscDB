@@ -1,0 +1,119 @@
+.Refrence {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 0 0 30px 0;
+    .crumbs {
+        height: 28px;
+        padding-top: 12px;
+        margin: 0;
+    }
+    .Refrence-inner {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 20px;
+        background: rgba(255, 255, 255, 1);
+        position: relative;
+        .topTitle {
+            width: 100%;
+            height: 40px;
+            font-size: 24px;
+            font-family: PingFang SC, PingFang SC-Heavy;
+            font-weight: 800;
+            text-align: center;
+            color: #666666;
+        }
+        .topSecondTitle {
+            width: 100%;
+            height: 40px;
+            background: #24a461;
+            font-size: 18px;
+            font-family: PingFang SC, PingFang SC-Heavy;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 40px;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .titleContent {
+            width: 100%;
+            height: 302px;
+            border: 1px solid #24a461;
+            box-sizing: border-box;
+            padding: 24px;
+            margin-bottom: 40px;
+            .imgCon {
+                width: 286px;
+                height: 250px;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                float: left;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .formCon {
+                margin-left: 286px;
+                height: 250px;
+                padding-left: 30px;
+                li {
+                    width: 100%;
+                    height: 50px;
+                    font-size: 16px;
+                    font-family: PingFang SC, PingFang SC-Medium;
+                    font-weight: 500;
+                    color: #666666;
+                    line-height: 50px;
+                    span:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .downloadIcon {
+            width: 14px;
+            height: 16px;
+            display: inline-block;
+            background: url(~@/assets/img/download01.png) no-repeat 50% 3px;
+            background-size: contain;
+            cursor: pointer;
+        }
+        .statusSpan1 {
+            width: auto;
+            background: #fff1f0;
+            border: 1px solid #ffaca7;
+            color: #d9656f;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .statusSpan2 {
+            width: auto;
+            background: #f6ffed;
+            border: 1px solid #beed99;
+            color: #3b9f57;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .statusSpan3 {
+            width: auto;
+            background: #fff7e6;
+            border: 1px solid #ffd99b;
+            color: #e49028;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .litClass {
+            cursor: pointer;
+            display: inline-block;
+            width: 50%;
+            color: #0a9daa;
+            text-decoration: underline;
+        }
+    }
+}

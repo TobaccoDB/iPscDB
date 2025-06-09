@@ -1,0 +1,22 @@
+Django==5.0.3
+django-filter==24.1
+django-cors-headers==4.3.1
+djangorestframework==3.14.0
+djangorestframework-jwt==1.11.0
+pymysql==1.1.0
+six==1.16.0
+# mysqlclient==2.2.4
+celery==5.4.0
+# uwsgi==2.0.24
+redis==5.0.7
+flower==2.0.1
+django-celery-beat==2.6.0
+django-celery-results==2.5.1
+scanpy==1.10.2
+igraph==0.11.6
+harmonypy==0.0.10
+leidenalg==0.10.2
+requests==2.32.3
+requests-toolbelt==1.0.0
+anndate==0.10.9
+scikit-learn==1.5.2

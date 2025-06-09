@@ -1,0 +1,222 @@
+.projectAtlas {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+    .projectAtlas-inner {
+        width: 1240px; // padding: 0 0 20px 20px;
+        height: 100%;
+        margin: 0 auto;
+        // overflow: hidden; // background: rgba(255, 255, 255, 1);
+        background: #fff;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        .projectAtlas-inner-name {
+            font-size: 24px;
+            color: #212121;
+            letter-spacing: 0.1px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            border-left: 12px solid #24a461;
+            padding-left: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .scsa {
+            height: auto;
+            .grid-content {
+                width: 100%;
+                // margin-top: 20px;
+                margin-bottom: 20px;
+                height: 178px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                background: #fff;
+                .grid-content-top {
+                    width: 100%;
+                    height: 136px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    padding: 14px 19px 0 19px;
+                    box-sizing: border-box;
+                    display: flex;
+                    .grid-content-top-left {
+                        width: 48px;
+                        height: 105px;
+                        // background: yellowgreen;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .grid-content-top-right {
+                        width: calc(100% - 48px);
+                        height: 100%;
+                        .title {
+                            width: 100%;
+                            height: 22px;
+                            line-height: 22px;
+                            font-size: 16px;
+                            color: #212121;
+                            letter-spacing: 0.07px;
+                            font-weight: 600;
+                            margin-bottom: 20px;
+                            .titleOverflow2 {
+                                display: inline-block;
+                                width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            // .titleOverflow {
+                            //     width: 100%;
+                            //     background: yellowgreen;
+                            // }
+                        }
+                        .contentBox {
+                            width: 100%;
+                            height: calc(100% - 42px);
+                            display: flex;
+                            font-size: 14px;
+                            font-weight: bold;
+                            .contentBoxLeft {
+                                margin-left: 10px;
+                                p:nth-child(1) {
+                                    margin-bottom: 10px;
+                                    font-size: 18px;
+                                    color: #666666;
+                                }
+                                p:nth-child(2) {
+                                    margin-bottom: 10px;
+                                    font-size: 18px;
+                                    color: #212121;
+                                }
+                            }
+                            .contentBoxLeft:nth-child(1) {
+                                margin-left: 20px;
+                                margin-right: 10px;
+                            }
+                        }
+                        .content {
+                            width: 100%;
+                            height: 20px;
+                            font-size: 14px;
+                            padding-left: 29px;
+                            box-sizing: border-box;
+                            margin-bottom: 8px;
+                            span:nth-child(1) {
+                                color: #666666;
+                                margin-right: 5px;
+                            }
+                        }
+                        .contentFooter {
+                            width: 100%;
+                            height: 20px;
+                            font-size: 14px;
+                            padding-left: 29px;
+                            box-sizing: border-box;
+                            span:nth-child(1) {
+                                color: #666666;
+                                margin-right: 5px;
+                            }
+                            span:nth-child(2) {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .title {
+                    width: 100%;
+                    height: 55px;
+                    line-height: 55px;
+                    font-size: 18px;
+                    font-family: Source Han Sans CN, Source Han Sans CN-Bold;
+                    font-weight: 700;
+                    color: #333333;
+                    letter-spacing: 0.45px;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    position: relative;
+                    .titleOverflow {
+                        // width: 100%;
+                        // background: yellowgreen;
+                        display: inline-block;
+                        width: calc(100% - 65px);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        position: absolute;
+                        top: -0px;
+                        right: 0;
+                    }
+                    .titleOverflowDetial{
+                           font-size: 12px; 
+                           width: calc(100% - 65px);
+                           position: absolute;
+                           right: 0;
+                           bottom: -20px;
+                        //    font-weight: 100;
+                        //    background: yellowgreen;
+                    }
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        position: relative;
+                        top: 5px;
+                        margin-right: 15px;
+                        border-radius: 50%;
+                        background: #ADE5F3;
+                    }
+                }
+                .ul-content {
+                    width: 100%;
+                    height: 55px;
+                    line-height: 55px;
+                    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    li {
+                        width: 50%;
+                        height: 55px;
+                        line-height: 55px;
+                        float: left;
+                        font-size: 16px;
+                        font-family: Source Han Sans CN, Source Han Sans CN-Regular;
+                        font-weight: 400;
+                        color: #333;
+                        letter-spacing: 0.4px;
+                        span {
+                            color: #666666;
+                        }
+                    }
+                }
+                .btn-content {
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    padding-top: 10px;
+                    p {
+                        width: 50%;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        float: left;
+                        .btn {
+                            padding-top: 0;
+                            font-size: 16px;
+                        }
+                    }
+                    p:nth-child(1) {
+                        border-right: 1px solid rgba(0, 0, 0, 0.1);
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+}

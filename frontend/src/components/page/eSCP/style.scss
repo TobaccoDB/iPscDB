@@ -1,0 +1,47 @@
+.eSCP {
+    width: 100%; // width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 0;
+    .eSCP-inner {
+        width: 1200px;
+        padding: 0px 20px;
+        margin: 0 auto;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 1);
+        min-height: 700px;
+        .blast {
+            height: auto;
+        }
+        .efpTitle {
+            padding: 0;
+            height: 40px;
+            font-size: 18px;
+            font-family: PingFang SC, PingFang SC-Bold;
+            font-weight: 700;
+            color: #333333;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        .svgClass {
+            margin-top: 20px;
+            width: 100%;
+            min-height: 750px;
+            height: auto;
+            /* height: 916px; */
+        }
+        .btnSearch {
+            width: auto;
+            height: 40px;
+            background: #24a461;
+            font-size: 18px;
+            font-family: PingFang SC;
+            color: #fff;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+    }
+}

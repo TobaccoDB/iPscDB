@@ -1,0 +1,631 @@
+[2024-11-06 14:00:38,565: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-11-06 14:00:38,593: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-11-06 14:00:38,598: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-11-06 14:00:38,602: INFO/MainProcess] mingle: searching for neighbors
+[2024-11-06 14:00:39,629: INFO/MainProcess] mingle: all alone
+[2024-11-06 14:00:39,667: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-11-20 15:23:32,428: WARNING/MainProcess] Traceback (most recent call last):
+[2024-11-20 15:23:32,438: WARNING/MainProcess]   File "/usr/local/lib/python3.11/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+[2024-11-20 15:23:32,438: WARNING/MainProcess]   File "/usr/local/lib/python3.11/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-20 15:23:32,439: WARNING/MainProcess]   File "/usr/local/lib/python3.11/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+[2024-11-20 15:23:32,439: WARNING/MainProcess]   File "/usr/local/lib/python3.11/shutil.py", line 722, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+[2024-11-20 15:23:32,439: WARNING/MainProcess]   File "/usr/local/lib/python3.11/shutil.py", line 720, in rmtree
+    orig_st = os.lstat(path, dir_fd=dir_fd)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-20 15:23:32,439: WARNING/MainProcess] FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pymp-hnamvoro'
+[2024-11-20 15:23:40,787: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-11-20 15:23:40,794: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-11-20 15:23:40,797: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-11-20 15:23:40,803: INFO/MainProcess] mingle: searching for neighbors
+[2024-11-20 15:23:41,823: INFO/MainProcess] mingle: all alone
+[2024-11-20 15:23:41,851: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-11-20 15:23:44,648: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-11-20 17:31:36,036: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-11-20 17:31:36,045: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-11-20 17:31:36,051: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-11-20 17:31:36,056: INFO/MainProcess] mingle: searching for neighbors
+[2024-11-20 17:31:37,079: INFO/MainProcess] mingle: all alone
+[2024-11-20 17:31:37,109: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-11-20 17:31:38,486: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-02 14:38:54,023: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-02 14:38:54,030: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-02 14:38:54,032: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-02 14:38:54,036: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-02 14:38:55,057: INFO/MainProcess] mingle: all alone
+[2024-12-02 14:38:55,085: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-02 14:38:58,359: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-02 15:21:44,343: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-02 15:21:44,351: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-02 15:21:44,356: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-02 15:21:44,361: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-02 15:21:45,392: INFO/MainProcess] mingle: all alone
+[2024-12-02 15:21:45,421: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-02 15:21:47,620: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-04 15:49:55,469: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-04 15:49:55,478: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-04 15:49:55,483: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-04 15:49:55,490: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-04 15:49:56,508: INFO/MainProcess] mingle: all alone
+[2024-12-04 15:49:56,534: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-04 15:49:57,797: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-06 16:37:00,697: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-06 16:37:00,706: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-06 16:37:00,711: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-06 16:37:00,725: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-06 16:37:01,750: INFO/MainProcess] mingle: all alone
+[2024-12-06 16:37:01,779: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-06 16:37:03,228: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-09 14:08:29,524: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-09 14:08:29,532: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-09 14:08:29,537: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-09 14:08:29,547: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-09 14:08:30,570: INFO/MainProcess] mingle: all alone
+[2024-12-09 14:08:30,599: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-09 14:08:32,068: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-09 16:46:19,870: INFO/MainProcess] Task cellranger[ff483318-50cf-48d0-883c-80f57e56e9a4] received
+[2024-12-09 18:57:37,983: INFO/ForkPoolWorker-31] Task cellranger[ff483318-50cf-48d0-883c-80f57e56e9a4] succeeded in 7878.079282504041s: None
+[2024-12-10 16:09:39,021: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-10 16:09:39,030: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-10 16:09:39,036: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-10 16:09:39,046: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-10 16:09:40,070: INFO/MainProcess] mingle: all alone
+[2024-12-10 16:09:40,101: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-10 16:09:42,959: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-10 16:23:45,136: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-10 16:23:45,145: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-10 16:23:45,151: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-10 16:23:45,159: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-10 16:23:46,179: INFO/MainProcess] mingle: all alone
+[2024-12-10 16:23:46,208: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-10 16:23:47,606: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-11 13:29:55,891: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-11 13:29:55,898: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-11 13:29:55,904: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-11 13:29:55,908: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-11 13:29:56,931: INFO/MainProcess] mingle: all alone
+[2024-12-11 13:29:56,958: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-11 13:29:58,262: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-18 18:25:25,743: INFO/MainProcess] missed heartbeat from worker@localhost.localdomain
+[2024-12-24 10:44:07,759: WARNING/MainProcess] Traceback (most recent call last):
+[2024-12-24 10:44:07,761: WARNING/MainProcess]   File "/usr/local/lib/python3.11/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+[2024-12-24 10:44:07,761: WARNING/MainProcess]   File "/usr/local/lib/python3.11/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-12-24 10:44:07,761: WARNING/MainProcess]   File "/usr/local/lib/python3.11/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+[2024-12-24 10:44:07,761: WARNING/MainProcess]   File "/usr/local/lib/python3.11/shutil.py", line 722, in rmtree
+    onerror(os.lstat, path, sys.exc_info())
+[2024-12-24 10:44:07,761: WARNING/MainProcess]   File "/usr/local/lib/python3.11/shutil.py", line 720, in rmtree
+    orig_st = os.lstat(path, dir_fd=dir_fd)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-12-24 10:44:07,761: WARNING/MainProcess] FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pymp-d15aexht'
+[2024-12-24 10:44:18,588: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-24 10:44:18,599: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-24 10:44:18,606: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-24 10:44:18,612: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-24 10:44:19,637: INFO/MainProcess] mingle: all alone
+[2024-12-24 10:44:19,672: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-24 10:44:22,206: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-24 10:53:21,360: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-24 10:53:21,369: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-24 10:53:21,373: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-24 10:53:21,378: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-24 10:53:22,405: INFO/MainProcess] mingle: all alone
+[2024-12-24 10:53:22,436: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-24 10:53:23,580: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-24 16:49:14,389: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-24 16:49:14,396: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-24 16:49:14,401: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-24 16:49:14,406: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-24 16:49:15,431: INFO/MainProcess] mingle: all alone
+[2024-12-24 16:49:15,461: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-24 16:49:17,900: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-25 09:36:02,370: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 09:36:02,378: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-25 09:36:02,383: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 09:36:02,393: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-25 09:36:03,416: INFO/MainProcess] mingle: all alone
+[2024-12-25 09:36:03,456: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-25 09:36:07,641: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-25 09:38:25,909: INFO/MainProcess] Task cellranger[712603ea-ef3c-4b28-8e41-8bc4bf2e0660] received
+[2024-12-25 09:49:32,012: INFO/MainProcess] Task cellranger[0789ba87-30a5-4fb1-b3b8-28def5f1eede] received
+[2024-12-25 09:49:32,641: WARNING/ForkPoolWorker-32] Task failed with error: 
+[2024-12-25 09:49:32,692: ERROR/ForkPoolWorker-32] Task cellranger[0789ba87-30a5-4fb1-b3b8-28def5f1eede] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 09:55:11,239: INFO/MainProcess] Task cellranger[2e15f19b-2d88-47ac-a4bd-685d201980e7] received
+[2024-12-25 09:55:11,848: WARNING/ForkPoolWorker-32] Task failed with error: 
+[2024-12-25 09:55:11,877: ERROR/ForkPoolWorker-32] Task cellranger[2e15f19b-2d88-47ac-a4bd-685d201980e7] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 09:59:09,362: INFO/MainProcess] Task cellranger[8730399b-3314-4ef6-8acd-db2f6a8851eb] received
+[2024-12-25 09:59:09,956: WARNING/ForkPoolWorker-32] Task failed with error: 
+[2024-12-25 09:59:09,991: ERROR/ForkPoolWorker-32] Task cellranger[8730399b-3314-4ef6-8acd-db2f6a8851eb] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 10:03:20,338: INFO/MainProcess] Task cellranger[8a469ef0-c183-4471-9831-a4f51d92ccaa] received
+[2024-12-25 10:03:20,935: WARNING/ForkPoolWorker-32] Task failed with error: 
+[2024-12-25 10:03:20,975: ERROR/ForkPoolWorker-32] Task cellranger[8a469ef0-c183-4471-9831-a4f51d92ccaa] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 10:47:37,617: WARNING/ForkPoolWorker-31] Task failed with error: 
+[2024-12-25 10:47:37,783: ERROR/ForkPoolWorker-31] Task cellranger[712603ea-ef3c-4b28-8e41-8bc4bf2e0660] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:23:31,816: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 11:23:31,825: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-25 11:23:31,830: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 11:23:31,835: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-25 11:23:32,860: INFO/MainProcess] mingle: all alone
+[2024-12-25 11:23:32,894: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-25 11:23:32,896: INFO/MainProcess] Task cellranger[2ffc2882-1559-435f-ad79-ce59d1505496] received
+[2024-12-25 11:23:32,897: INFO/MainProcess] Task cellranger[ea87d710-9ad7-4a2d-8868-085fc542cc40] received
+[2024-12-25 11:23:32,898: INFO/MainProcess] Task cellranger[598718f1-ca73-4de6-86d7-88d5dc30cae8] received
+[2024-12-25 11:23:32,898: INFO/MainProcess] Task cellranger[c341cc1d-9066-47a4-b1ad-20079503c5a8] received
+[2024-12-25 11:23:32,899: INFO/MainProcess] Task cellranger[6d49ff8e-6b27-46f3-ae6a-dbe1183aa03e] received
+[2024-12-25 11:23:32,899: INFO/MainProcess] Task cellranger[9257c918-7c49-4e3b-95c2-cbb4b9861237] received
+[2024-12-25 11:23:32,900: INFO/MainProcess] Task cellranger[8190020c-c0a2-4634-bbf0-dc5030bb54e1] received
+[2024-12-25 11:23:33,210: WARNING/ForkPoolWorker-4] Task failed with error: 
+[2024-12-25 11:23:33,211: WARNING/ForkPoolWorker-31] Task failed with error: 
+[2024-12-25 11:23:33,212: WARNING/ForkPoolWorker-3] Task failed with error: 
+[2024-12-25 11:23:33,218: WARNING/ForkPoolWorker-32] Task failed with error: 
+[2024-12-25 11:23:33,223: WARNING/ForkPoolWorker-1] Task failed with error: 
+[2024-12-25 11:23:33,225: ERROR/ForkPoolWorker-31] Task cellranger[2ffc2882-1559-435f-ad79-ce59d1505496] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:23:33,235: ERROR/ForkPoolWorker-4] Task cellranger[9257c918-7c49-4e3b-95c2-cbb4b9861237] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:23:33,239: ERROR/ForkPoolWorker-3] Task cellranger[6d49ff8e-6b27-46f3-ae6a-dbe1183aa03e] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:23:33,246: ERROR/ForkPoolWorker-32] Task cellranger[ea87d710-9ad7-4a2d-8868-085fc542cc40] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:23:33,253: ERROR/ForkPoolWorker-1] Task cellranger[598718f1-ca73-4de6-86d7-88d5dc30cae8] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:23:34,066: WARNING/ForkPoolWorker-2] Task failed with error: 
+[2024-12-25 11:23:34,094: ERROR/ForkPoolWorker-2] Task cellranger[c341cc1d-9066-47a4-b1ad-20079503c5a8] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:23:34,211: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-25 11:23:39,390: WARNING/ForkPoolWorker-5] Task failed with error: 
+[2024-12-25 11:23:39,424: ERROR/ForkPoolWorker-5] Task cellranger[8190020c-c0a2-4634-bbf0-dc5030bb54e1] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 11:24:40,891: INFO/MainProcess] Task cellranger[8271c2cb-264d-4fc2-8b3e-076a47133675] received
+[2024-12-25 11:31:55,394: INFO/MainProcess] Task cellranger[86a3ddd2-1e76-4b75-8f39-45c53b9c9977] received
+[2024-12-25 11:32:03,158: WARNING/ForkPoolWorker-32] Task failed with error: 
+[2024-12-25 11:32:03,180: ERROR/ForkPoolWorker-32] Task cellranger[86a3ddd2-1e76-4b75-8f39-45c53b9c9977] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 12:29:23,218: WARNING/ForkPoolWorker-31] Task failed with error: 
+[2024-12-25 12:29:23,257: ERROR/ForkPoolWorker-31] Task cellranger[8271c2cb-264d-4fc2-8b3e-076a47133675] raised unexpected: Exception('\n\n')
+Traceback (most recent call last):
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/venv/lib/python3.11/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/analysis_server/django_server/apps/analysis/tasks.py", line 78, in cellranger
+    raise Exception(result.stderr)
+Exception: 
+
+
+[2024-12-25 13:51:08,679: INFO/MainProcess] Task cellranger[2bbeaf05-ed83-4381-9a4c-3c3223c1e60c] received
+[2024-12-25 13:51:24,223: INFO/ForkPoolWorker-31] Task cellranger[2bbeaf05-ed83-4381-9a4c-3c3223c1e60c] succeeded in 15.510693582706153s: None
+[2024-12-25 14:02:19,326: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 14:02:19,335: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-25 14:02:19,340: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 14:02:19,345: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-25 14:02:20,370: INFO/MainProcess] mingle: all alone
+[2024-12-25 14:02:20,398: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-25 14:02:22,479: INFO/MainProcess] sync with worker@localhost.localdomain
+[2024-12-25 14:03:33,033: INFO/MainProcess] Task cellranger[06c27528-f68f-42ea-b30d-0d8edd8de6c3] received
+[2024-12-25 14:03:47,686: INFO/ForkPoolWorker-31] Task cellranger[06c27528-f68f-42ea-b30d-0d8edd8de6c3] succeeded in 14.648701119236648s: 'Finished'
+[2024-12-25 14:18:37,075: INFO/MainProcess] Task cellranger[83a906fc-705d-4e33-b9cd-b2859b70254f] received
+[2024-12-25 14:18:51,703: INFO/ForkPoolWorker-31] Task cellranger[83a906fc-705d-4e33-b9cd-b2859b70254f] succeeded in 14.616465587168932s: 'Finished'
+[2024-12-25 14:36:59,320: INFO/MainProcess] Task cellranger[cc89f3f8-7e16-46e0-a91c-b85671ad2908] received
+[2024-12-25 14:37:13,957: INFO/ForkPoolWorker-31] Task cellranger[cc89f3f8-7e16-46e0-a91c-b85671ad2908] succeeded in 14.633743315935135s: 'Finished'
+[2024-12-25 14:49:26,189: INFO/MainProcess] Task cellranger[f168d027-bc65-4ffd-acb5-b48fa3d2db71] received
+[2024-12-25 14:49:40,843: INFO/ForkPoolWorker-31] Task cellranger[f168d027-bc65-4ffd-acb5-b48fa3d2db71] succeeded in 14.650224789977074s: 'Finished'
+[2024-12-25 14:56:30,742: INFO/MainProcess] Task cellranger[d4e72ae7-2ca0-48ad-936a-0cb4c95da146] received
+[2024-12-25 14:56:45,362: INFO/ForkPoolWorker-31] Task cellranger[d4e72ae7-2ca0-48ad-936a-0cb4c95da146] succeeded in 14.61591539438814s: 'Finished'
+[2024-12-25 15:05:24,271: INFO/MainProcess] Task cellranger[be7e06dd-fffd-450b-991b-03be8ad85908] received
+[2024-12-25 15:05:38,882: INFO/ForkPoolWorker-31] Task cellranger[be7e06dd-fffd-450b-991b-03be8ad85908] succeeded in 14.606670744717121s: 'Finished'
+[2024-12-25 15:13:12,730: INFO/MainProcess] Task cellranger[9f0ac326-7a93-42e1-b3b2-8a9d94eb2b82] received
+[2024-12-25 15:13:27,366: INFO/ForkPoolWorker-31] Task cellranger[9f0ac326-7a93-42e1-b3b2-8a9d94eb2b82] succeeded in 14.632587054744363s: 'Finished'
+[2024-12-25 15:26:55,237: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 15:26:55,253: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2024-12-25 15:26:55,258: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-12-25 15:26:55,267: INFO/MainProcess] mingle: searching for neighbors
+[2024-12-25 15:26:56,287: INFO/MainProcess] mingle: all alone
+[2024-12-25 15:26:56,316: INFO/MainProcess] worker@cellranger_worker ready.
+[2024-12-25 15:28:57,140: INFO/MainProcess] Task cellranger[42b80c41-9c4e-4bf0-a664-f543877bc1af] received
+[2024-12-25 17:44:23,224: INFO/ForkPoolWorker-31] Task cellranger[42b80c41-9c4e-4bf0-a664-f543877bc1af] succeeded in 8126.0691902386025s: 'Finished'
+[2025-01-03 10:40:11,944: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-01-03 10:40:11,953: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2025-01-03 10:40:11,958: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-01-03 10:40:11,964: INFO/MainProcess] mingle: searching for neighbors
+[2025-01-03 10:40:12,989: INFO/MainProcess] mingle: all alone
+[2025-01-03 10:40:13,022: INFO/MainProcess] worker@cellranger_worker ready.
+[2025-01-03 10:40:15,150: INFO/MainProcess] sync with worker@localhost.localdomain
+[2025-01-03 16:24:05,821: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-01-03 16:24:05,829: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2025-01-03 16:24:05,835: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-01-03 16:24:05,844: INFO/MainProcess] mingle: searching for neighbors
+[2025-01-03 16:24:06,866: INFO/MainProcess] mingle: all alone
+[2025-01-03 16:24:06,898: INFO/MainProcess] worker@cellranger_worker ready.
+[2025-01-03 16:24:09,743: INFO/MainProcess] sync with worker@localhost.localdomain
+[2025-01-07 15:46:56,859: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-01-07 15:46:56,868: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2025-01-07 15:46:56,873: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-01-07 15:46:56,878: INFO/MainProcess] mingle: searching for neighbors
+[2025-01-07 15:46:57,903: INFO/MainProcess] mingle: all alone
+[2025-01-07 15:46:57,931: INFO/MainProcess] worker@cellranger_worker ready.
+[2025-01-07 15:47:04,633: INFO/MainProcess] sync with worker@localhost.localdomain
+[2025-05-19 13:56:37,521: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-05-19 13:56:37,528: INFO/MainProcess] Connected to amqp://guest:**@127.0.0.1:5672//
+[2025-05-19 13:56:37,531: WARNING/MainProcess] /opt/analysis_server/venv/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:508: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-05-19 13:56:37,535: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-19 13:56:38,557: INFO/MainProcess] mingle: all alone
+[2025-05-19 13:56:38,590: INFO/MainProcess] worker@cellranger_worker ready.
+[2025-05-19 13:56:41,013: INFO/MainProcess] sync with worker@localhost.localdomain

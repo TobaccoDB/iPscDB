@@ -1,0 +1,110 @@
+.search {
+    width: 100%; // width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px 0; // 隐藏全选框
+    .search-inner >>> .DisableSelection > .cell {
+        display: none !important;
+    }
+    .search-inner {
+        width: 1200px;
+        padding: 0px 20px;
+        margin: 0 auto;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 1);
+        .blast {
+            height: auto;
+        }
+        .btnSearch {
+            width: auto;
+            height: 40px;
+            background: #24a461;
+            font-size: 18px;
+            font-family: PingFang SC;
+            color: #fff;
+            outline: none;
+            border: none;
+            padding: 0 20px;
+        }
+        .downloadIcon {
+            // width: 21px;
+            // height: 21px;
+            width: 14px;
+            height: 16px;
+            display: inline-block;
+            background: url(~@/assets/img/download01.png) no-repeat 50% 3px; // background: url(~@/assets/img/search_download.png) no-repeat 50% 3px;
+            background-size: contain;
+            cursor: pointer;
+        }
+        .statusSpan1 {
+            width: auto;
+            background: #fff1f0;
+            border: 1px solid #ffaca7;
+            color: #d9656f;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .statusSpan2 {
+            width: auto;
+            background: #f6ffed;
+            border: 1px solid #beed99;
+            color: #3b9f57;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .statusSpan3 {
+            width: auto;
+            background: #fff7e6;
+            border: 1px solid #ffd99b;
+            color: #e49028;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .litClass {
+            cursor: pointer;
+            display: inline-block;
+            width: 50%;
+            color: #0a9daa;
+            text-decoration: underline;
+        }
+        .radioType {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            span {
+                width: 124px;
+                height: 16px;
+                font-size: 16px;
+                font-family: PingFang SC, PingFang SC-Medium;
+                font-weight: 500;
+                color: #666666;
+                line-height: 40px;
+                margin-right: 30px;
+            }
+        }
+        .tips {
+            width: 100%;
+            height: auto;
+            background: #fff7e6;
+            font-size: 16px;
+            font-family: PingFang SC, PingFang SC-Medium;
+            font-weight: 500;
+            color: #e49028;
+            line-height: 30px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            padding: 20px;
+            overflow: hidden;
+            text-align: justify;
+        }
+    }
+}
+
+
+.ReferenceTable{
+    background-color: #0a9daa
+}

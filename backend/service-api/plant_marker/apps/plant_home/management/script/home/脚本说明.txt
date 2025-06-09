@@ -1,0 +1,105 @@
+一.跑脚本前，先修改txt_to_csv_plant.py、expression_data_other.py、mean_plant.py 三个脚本的base_dir属性，指向源文件的路径
+二.把脚本放入对应的物种组织文件夹下
+三.进入对应的物种组织目录下执行创建目录命令，创建脚本所需目录
+	mkdir expression_data mean_data_cell_type mean_data_cluster mean_data_sample
+	
+四.运行脚本
+	1.expression_data_other.py
+		读取文件：
+			D4_GEMatrix.txt
+		输出文件：
+			expression_data目录下的gene的csv文件
+		脚本说明：运行脚本前需先在脚本同级目录下创建expression_data目录，并且修改脚本文件中的base_dir属性，指向读取文件的路径
+		
+	2.txt_to_csv_plant.py
+		读取文件：
+			D1_umap_location.txt
+			D3_cell_type.txt
+			D2_tsne_location.txt
+		输出文件：
+			cell_cluster.csv
+			umap_data_old.csv
+			umap_gene_count_Clusters.txt
+			umap_gene_count_Cell_type.txt
+			umap_gene_count_Project_ID.txt
+			tsne_data_old.csv
+			tsne_gene_count_cluster.txt
+			tsne_gene_count_cell_type.txt
+			tsne_gene_count_sample.txt
+		脚本说明：
+			修改脚本文件中的base_dir属性，指向读取文件的路径
+			
+五.运行脚本
+	1.mean_plant.py
+		读取文件：
+			D3_cell_type.txt
+			D4_GEMatrix.txt
+		输出文件：
+			expresse_gene_count_Clusters.txt
+			total_mean_Clusters.csv
+			expresse_gene_count_Project_ID.txt
+			total_mean_Project_ID.csv
+			expresse_gene_count_Cell_type.txt
+			total_mean_Cell_type.csv
+			mean_data_cluster目录下对应cluster的csv文件
+			mean_data_cell_type目录下对应cell type的csv文件
+			mean_data_sample目录下对应project id的csv文件
+		脚本说明：
+			运行脚本前需先在脚本同级目录下创建mean_data_cluster、mean_data_cell_type、mean_data_sample目录，并且修改脚本文件中的base_dir属性，指向读取文件的路径
+			
+	2.umap_or_tsne_500.py
+		读取文件：
+			umap_data_old.csv
+			tsne_data_old.csv
+		输出文件：
+			umap_data.csv
+			tsne_data.csv
+		脚本说明：
+			运行脚本前需保证第一步运行的脚本txt_to_csv_plant.py运行成功且运行完成
+		
+六.运行脚本
+	1.pearson.py
+		读取文件：
+			total_mean_Cell_type.csv
+			total_mean_Clusters.csv
+			total_mean_Project_ID.csv
+		输出文件：
+			pearson_Cell_type.png
+			pearson_Clusters.png
+			pearson_Project_ID.png
+		脚本说明：
+			运行此脚本需保证第二步脚本mean_plant.py运行正常且运行结束
+	2.gene_number_cell_type.py
+		读取文件：
+			umap_data_old.csv
+			D4_GEMatrix.csv
+		输出文件：
+			expresse_gene_number_Cell_type.txt
+			expresse_gene_number_Project_ID.txt
+			expresse_gene_number_Clusters.txt
+		脚本说明：
+			运行此脚本需保证第二步脚本txt_to_csv_plant.py运行正常且运行结束
+			
+七.所有脚本执行完毕后执行下面命令，把脚本生成的PNG文件移动到静态资源路径下
+	cp pearson_Cell_type.png pearson_Clusters.png pearson_Project_ID.png 静态资源路径
+	
+八.移动RDS文件到静态资源路径下
+	cp D5_XXXX.rds 静态资源路径
+	
+说明：脚本文件有多个版本的脚本，请选择合适的使用，本文件中的说明是最后使用的一份脚本
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

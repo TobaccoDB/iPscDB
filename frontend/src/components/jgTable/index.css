@@ -1,0 +1,62 @@
+.pointer {
+    cursor: pointer;
+}
+
+.el-icon-edit,
+.el-icon-delete {
+    margin: 0 3px;
+}
+
+.text {
+    color: #409eff;
+}
+
+.el-table--border td,
+.el-table--border th,
+.el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+    /* border-right: 1px solid #24a461;
+    border-bottom: 1px solid #24a461; */
+}
+
+/* .el-table--border,
+.el-table--group {
+  border: 1px solid #24A461;
+} */
+
+/* .el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+    background-color: #24a461;
+} */
+
+.el-table--border,
+.el-table--group {
+    /* border-color: #24a461; */
+    /* border-top: none;
+    border-bottom: none; */
+}
+
+/* .el-table td,
+.el-table th.is-leaf {
+    border-color: #24a461;
+} */
+
+/* .el-table--border th,
+.el-table--border th.gutter:last-of-type {
+    border-color: #24a461;
+}
+
+.el-table--border td,
+.el-table--border th {
+    border-color: #24a461;
+} */
+
+/* .el-table td.el-table__cell,
+.el-table th.el-table__cell.is-leaf {
+    border-bottom: 1px solid #24a461;
+}
+
+.el-table--border .el-table__cell,
+.el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
+    border-right: 1px solid #24a461;
+} */

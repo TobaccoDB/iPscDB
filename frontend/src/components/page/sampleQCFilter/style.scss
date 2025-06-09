@@ -1,0 +1,99 @@
+.sampleQCFilter {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 0 0 30px 0;
+    .crumbs {
+        height: 28px;
+        padding-top: 12px;
+        margin: 0;
+    }
+    .sampleQCFilter-inner {
+        width: 1240px;
+        margin: 0 auto;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 1);
+        .title1 {
+            font-size: 20px;
+            font-family: PingFang SC;
+            font-weight: 700;
+            color: #333;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .UMAP {
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            height: auto;
+            min-height: 420px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .form1 {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .scsa_bottom_ul {
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            box-sizing: border-box; // margin-bottom: 20px;
+            overflow: hidden;
+            li {
+                width: 280px;
+                height: 120px;
+                background: #24a461 url(~@/assets/img/QCFilter.png) no-repeat 85% 50%;
+                border-radius: 4px;
+                float: left;
+                margin-right: 20px;
+                .statusSpan1 {
+                    width: 200px;
+                    height: 60px;
+                    font-size: 30px;
+                    font-family: PingFang SC, PingFang SC-Regular;
+                    font-weight: bold;
+                    color: #ffffff;
+                    line-height: 90px;
+                    display: block;
+                    padding-left: 30px;
+                }
+                .statusSpan2 {
+                    width: 200px;
+                    height: 60px;
+                    font-size: 16px;
+                    font-family: PingFang SC, PingFang SC-Regular;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 40px;
+                    display: block;
+                    padding-left: 30px;
+                }
+            }
+        }
+        .grid-content {
+            background: #fafafa;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+        .scsa {
+            height: auto;
+            padding: 0 20px;
+            .keyword_p1 {
+                margin-bottom: 0;
+                height: 47px;
+                font-size: 18px;
+                font-family: PingFang SC;
+                font-weight: bold;
+                color: rgba(51, 51, 51, 1);
+            }
+        }
+    }
+}

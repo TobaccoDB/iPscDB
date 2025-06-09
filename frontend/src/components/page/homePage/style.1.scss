@@ -1,0 +1,494 @@
+.homepage {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #fff; // 图片部分
+    font-family: Source Han Sans CN, Source Han Sans CN-Medium;
+    .homepage_img {
+        width: 1240px;
+        height: auto;
+        padding: 30px 0;
+        margin: auto;
+        box-sizing: border-box;
+        .homepage_img_left {
+            width: 100%; // height: 705px;
+            height: 625px;
+            margin-top: 40px;
+            position: relative;
+        }
+        .homepage_img_right {
+            width: 100%;
+            height: 705px;
+            /* 点击对应的标题添加对应的背景颜色 */
+            .active {
+                opacity: 1;
+                dd {
+                    color: #24a461 !important;
+                    font-weight: 400;
+                }
+            }
+            dl {
+                width: 50%;
+                height: 141px;
+                float: left;
+                opacity: 0.7;
+                transition: all 0.4s;
+                cursor: pointer;
+                dt {
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px auto;
+                    border-radius: 50%;
+                    background: #24a461 url(~@/assets/img/Arabidopsis_thaliana_small.png) no-repeat 50%;
+                    background-size: contain;
+                }
+                dd {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #999;
+                    font-weight: 200;
+                }
+            }
+            dl:nth-child(2) {
+                dt {
+                    background: #24a461 url(~@/assets/img/rice_small.png) no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            dl:nth-child(3) {
+                dt {
+                    background: #24a461 url(~@/assets/img/maize_small.png) no-repeat 50%;
+                    background-size: contain;
+                }
+            } // dl:nth-child(4) {
+            //     dt {
+            //         background: #24A461 url(~@/assets/img/peanut.png) no-repeat 50%;
+            //         background-size: contain;
+            //     }
+            // }
+            dl:nth-child(4) {
+                dt {
+                    background: #24a461 url(~@/assets/img/Solanum_lycopersicum_small.png) no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            dl:nth-child(5) {
+                dt {
+                    background: #24a461 url(~@/assets/img/Nicotiana_tabacum_small.png) no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            dl:nth-child(6) {
+                dt {
+                    background: #24a461 url(~@/assets/img/Popular_alba.png) no-repeat 50%;
+                    background-size: contain;
+                }
+                dd {
+                    line-height: 20px;
+                }
+            }
+            dl:nth-child(7) {
+                dt {
+                    background: #24a461 url(~@/assets/img/Hybrid_poplar.png) no-repeat 50%;
+                    background-size: contain;
+                }
+            } // dl:nth-child(8) {
+            //     dt {
+            //         background: #24A461 url(~@/assets/img/Hybrid_poplar.png) no-repeat 50%;
+            //         background-size: contain;
+            //     }
+            // }
+            // dl:nth-child(4) {
+            //     dt {
+            //         background: #24A461 url(~@/assets/img/peanut.png) no-repeat 50%;
+            //         background-size: contain;
+            //     }
+            // }
+            // dl:nth-child(5) {
+            //     dt {
+            //         background: #24A461 url(~@/assets/img/Solanum_lycopersicum_small.png) no-repeat 50%;
+            //         background-size: contain;
+            //     }
+            // }
+            // dl:nth-child(6) {
+            //     dt {
+            //         background: #24A461 url(~@/assets/img/Nicotiana_tabacum_small.png) no-repeat 50%;
+            //         background-size: contain;
+            //     }
+            // }
+            // dl:nth-child(7) {
+            //     dt {
+            //         background: #24A461 url(~@/assets/img/Populus.png) no-repeat 50%;
+            //         background-size: contain;
+            //     }
+            // }
+            dl:nth-child(8) {
+                dt {
+                    background: #24a461 url(~@/assets/img/Fragaria_vesca_small.png) no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            dl:nth-child(9) {
+                dt {
+                    background: #24a461 url(~@/assets/img/Phalaenopsis_aphrodite_small.png) no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            dl:hover {
+                opacity: 1;
+                dt {
+                    transform: scale(1.2);
+                }
+                dd {
+                    color: #24a461;
+                    font-weight: 400;
+                }
+            }
+        }
+    } // 统计
+    .homepage_statistics {
+        width: 100%;
+        height: auto;
+        min-height: 520px;
+        overflow: hidden;
+        .statistics_content {
+            width: 1240px;
+            height: auto;
+            min-height: 520px;
+            margin: 0 auto;
+            overflow: hidden;
+            .homepage_statistics_left {
+                float: left;
+                width: 885px;
+                height: auto;
+                min-height: 520px;
+                overflow: hidden;
+                margin: 0 auto;
+                h3 {
+                    width: 100%;
+                    height: 42px;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    background: #24a461;
+                    color: #fff;
+                    line-height: 42px;
+                }
+                .sta_left_content {
+                    width: 100%;
+                    height: auto;
+                    min-height: 520px;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    border: 1px solid #24a461;
+                    overflow: hidden;
+                    ul {
+                        width: 100%;
+                        height: auto; // margin-bottom: 20px;
+                        overflow: hidden;
+                        li {
+                            width: auto;
+                            height: 28px;
+                            line-height: 28px;
+                            float: left;
+                            padding: 0 10px;
+                            border: 1px solid #ffaca7;
+                            background: #fff1f0;
+                            margin-right: 12px;
+                            margin-bottom: 12px;
+                            color: #d9656f;
+                        }
+                        .Arabidopsis_thaliana_li {
+                            border: 1px solid #ffaca7;
+                            background: #fff1f0;
+                            color: #d9656f;
+                        }
+                        .Oryza_sativa_li {
+                            border: 1px solid #a798ff;
+                            background: #f0edff;
+                            color: #7567c6;
+                        }
+                        .Zea_mays_li {
+                            border: 1px solid #ffd99b;
+                            background: #fff7e6;
+                            color: #e49028;
+                        }
+                        .peanut_li {
+                            border: 1px solid #9bd9ff;
+                            background: #e6f7ff;
+                            color: #536fdc;
+                        }
+                        .Solanum_lycopersicum_li {
+                            border: 1px solid #eba2e2;
+                            background: #ffe1fc;
+                            color: #d36ec6;
+                        }
+                        .Nicotiana_tabacum_li {
+                            border: 1px solid #beed99;
+                            background: #f6ffed;
+                            color: #3b9f57;
+                        }
+                        .Popular_alba_li {
+                            border: 1px solid #7eedda;
+                            background: #d5fff8;
+                            color: #49b3a0;
+                        }
+                        .Hybrid_poplar_li {
+                            border: 1px solid #afd077;
+                            background: #edf5e0;
+                            color: #88b832;
+                        }
+                        .Phalaenopsis_aphrodite_li {
+                            border: 1px solid #3ea0ca;
+                            background: #e2f1f7;
+                            color: #3ea0ca;
+                        }
+                        .Fragaria_vesca_li {
+                            border: 1px solid #e4904c;
+                            background: #fbeee4;
+                            color: #e4904c; // margin-right: 0;
+                        } // 3、边框：#EAD547   背景：#FCF9E3   文字：#E0C128
+                    }
+                    dl {
+                        width: auto;
+                        height: auto;
+                        float: left;
+                        margin: 0 10px 10px 0;
+                        border: 1px solid #ffaca7;
+                        background: #fff1f0;
+                        cursor: pointer;
+                        dt {
+                            width: auto;
+                            height: auto;
+                            line-height: 28px;
+                            padding: 0 10px;
+                            color: #666;
+                        }
+                        dd {
+                            width: auto;
+                            height: auto;
+                            line-height: 28px;
+                            padding: 0 10px;
+                            color: #666;
+                        }
+                    }
+                    .Arabidopsis_thaliana_dlStyle {
+                        border: 1px solid #ffaca7;
+                        background: #fff1f0;
+                    }
+                    .Oryza_sativa_dlStyle {
+                        border: 1px solid #a798ff;
+                        background: #f0edff;
+                    }
+                    .Zea_mays_dlStyle {
+                        border: 1px solid #ffd99b;
+                        background: #fff7e6;
+                    }
+                    .peanut_dlStyle {
+                        border: 1px solid #9bd9ff;
+                        background: #e6f7ff;
+                    }
+                    .Solanum_lycopersicum_dlStyle {
+                        border: 1px solid #eba2e2;
+                        background: #ffe1fc;
+                    }
+                    .Nicotiana_tabacum_dlStyle {
+                        border: 1px solid #beed99;
+                        background: #f6ffed;
+                    }
+                    .Popular_alba_dlStyle {
+                        border: 1px solid #7eedda;
+                        background: #d5fff8;
+                    }
+                    .Hybrid_poplar_dlStyle {
+                        border: 1px solid #afd077;
+                        background: #edf5e0;
+                    }
+                    .Phalaenopsis_aphrodite_dlStyle {
+                        border: 1px solid #3ea0ca;
+                        background: #e2f1f7;
+                    }
+                    .Fragaria_vesca_dlStyle {
+                        border: 1px solid #e4904c;
+                        background: #fbeee4;
+                    }
+                }
+            }
+            .homepage_statistics_right {
+                float: left;
+                width: 335px;
+                height: auto;
+                min-height: 520px;
+                overflow: hidden;
+                margin-left: 20px;
+                h3 {
+                    width: 100%;
+                    height: 42px;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    background: #24a461;
+                    color: #fff;
+                    line-height: 42px;
+                }
+                .sta_right_content {
+                    width: 100%;
+                    height: auto;
+                    min-height: 520px;
+                    box-sizing: border-box;
+                    border: 1px solid #24a461;
+                    overflow: hidden;
+                    dl {
+                        width: 50%;
+                        height: 130px;
+                        padding-top: 30px;
+                        float: left;
+                        text-align: center;
+                        dt {
+                            width: 100%;
+                            height: 50px;
+                        }
+                        dd:nth-child(2) {
+                            width: 100%;
+                            height: 40px;
+                            line-height: 70px;
+                            font-size: 30px;
+                            font-weight: 700;
+                            color: #24a461;
+                        }
+                        dd:nth-child(3) {
+                            width: 100%;
+                            height: 40px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #666;
+                            line-height: 40px;
+                        }
+                    }
+                    dl:nth-child(1) {
+                        dt {
+                            background: url(~@/assets/img/home_sta01.png) no-repeat center;
+                        }
+                    }
+                    dl:nth-child(2) {
+                        dt {
+                            background: url(~@/assets/img/home_sta02.png) no-repeat center;
+                        }
+                    }
+                    dl:nth-child(3) {
+                        dt {
+                            background: url(~@/assets/img/home_sta03.png) no-repeat center;
+                        }
+                    }
+                    dl:nth-child(4) {
+                        dt {
+                            background: url(~@/assets/img/home_sta04.png) no-repeat center;
+                        }
+                    }
+                    dl:nth-child(5) {
+                        dt {
+                            background: url(~@/assets/img/home_sta05.png) no-repeat center;
+                        }
+                    }
+                }
+            } // dl {
+            //     width: 20%;
+            //     height: 100%;
+            //     float: left;
+            //     dt {
+            //         width: 100%;
+            //         height: 80px;
+            //         text-align: center;
+            //         font-size: 40px;
+            //         font-family: Source Han Sans CN Bold, Source Han Sans CN Bold-Bold;
+            //         font-weight: 700;
+            //         color: #fff;
+            //         line-height: 120px;
+            //     }
+            //     dd {
+            //         width: 100%;
+            //         height: 70px;
+            //         line-height: 50px;
+            //         text-align: center;
+            //         font-size: 16px;
+            //         font-family: Source Han Sans CN Medium, Source Han Sans CN Medium-Medium;
+            //         font-weight: 500;
+            //         color: #fff;
+            //     }
+            // }
+        }
+    } // 文字叙述部分
+    .homepage_introduce {
+        width: 100%;
+        height: 386px;
+        background: #24a461;
+        margin-top: 40px;
+        .introduce_content {
+            width: 1240px;
+            height: 100%;
+            margin: 0 auto;
+            dl {
+                width: 100%;
+                height: 100%;
+                dt {
+                    width: 100%;
+                    height: 71px;
+                    line-height: 90px;
+                    font-size: 18px;
+                    font-family: Source Han Sans CN Bold, Source Han Sans CN Bold-Bold;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                dd {
+                    width: 100%;
+                    height: 300px;
+                    font-size: 16px;
+                    font-family: Source Han Sans CN Normal, Source Han Sans CN Normal-Normal;
+                    color: #fff;
+                    text-align: justify;
+                }
+            }
+        }
+    } // 日志
+    .homepage_journal {
+        width: 100%;
+        height: 160px;
+        .journal_content {
+            width: 1240px;
+            height: 100%;
+            margin: 0 auto;
+            dl {
+                width: 100%;
+                height: 160px;
+                dt {
+                    width: 100%;
+                    height: 78px;
+                    line-height: 78px;
+                    font-size: 18px;
+                    font-family: Source Han Sans CN Bold, Source Han Sans CN Bold-Bold;
+                    font-weight: 700;
+                    color: #24a461;
+                }
+                dd {
+                    width: 100%;
+                    height: auto;
+                    font-size: 16px;
+                    font-family: Source Han Sans CN Normal, Source Han Sans CN Normal-Normal;
+                    color: #666;
+                    ul {
+                        width: 100%;
+                        height: 82px;
+                        overflow: auto;
+                        li {
+                            height: 40px;
+                            span {
+                                float: right;
+                                padding-right: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

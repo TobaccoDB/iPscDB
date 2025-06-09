@@ -1,0 +1,36 @@
+.CMPredictorDetails {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 0 0 30px 0;
+    .crumbs {
+        height: 28px;
+        padding-top: 12px;
+        margin: 0;
+    }
+    .CMPredictorDetails-inner {
+        width: 1240px;
+        margin: 0 auto;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 1);
+        .title1 {
+            font-size: 20px;
+            font-family: PingFang SC;
+            font-weight: bold;
+            color: #fff;
+            height: 40px;
+            line-height: 40px;
+            background: #24a461;
+            padding-left: 20px;
+        }
+        .cmp_table {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            height: auto; // min-height: 500px;
+            overflow: hidden;
+            text-align: center;
+        }
+    }
+}
