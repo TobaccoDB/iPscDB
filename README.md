@@ -1,106 +1,113 @@
-# iPscDB项目
-## 一、项目简介
-- iPscDB 是一个单细胞转录组数据资源库，其中包含了细胞标记物、单细胞图谱以及丰富的数据分析工具。目前，已收集了 23 种模式植物的数据，包括拟南芥、水稻、玉米、番茄和烟草等，涵盖了超过 270，480 个标记基因和超过 300 万份单细胞数据，为不同植物和组织中的细胞整合及单细胞研究提供了全面且相对准确的细胞标记物和细胞图谱。
-- 系统网址：https://www.tobaccodb.org/ipscdb/homePage
-- 代码地址：https://github.com/TobaccoDB/iPscDB.git
+# iPscDB
+## Welcome to iPscDB
+- iPscDB is a single cell transcriptomic data resource that includes cell markers, single cell maps, and a wealth of data analysis tools. At present, data from 23 species of model plants, including Arabidopsis thaliana, rice, corn, tomato, and tobacco, including more than 270,480 marker genes and more than 3 million single cell data, have been collected, providing comprehensive and relatively accurate cell markers and cell maps for cell integration and single cell research in different plants and tissues.
+- System website: https://www.tobaccodb.org/ipscdb/homePage
+- Github: https://github.com/TobaccoDB/iPscDB.git
 
-## 二、项目结构
-- frontend：前端项目
-  - public：静态资源
-  - src：源代码
-    - api：API 接口
-    - components：组件
-    - router：路由
-    - store：状态管理
-    - utils：工具函数
-    - App.vue：主应用组件
-    - main.js：入口文件
-  - .env.development：开发环境配置文件
-  - .env.production：生产环境配置文件
-  - babel.config.js：Babel 配置文件
-  - package.json：项目依赖配置文件
-  - vue.config.js：Vue 配置文件 
-- backend：后端项目
-  - service-api：API 服务
-    - excel：Excel 临时文件处理模块
-    - logs：日志文件
-    - plant_marker：应用程序
-    - static：静态文件
-    - temps：临时文件
-    - manage.py：Django 管理脚本
-    - requirements.txt：Python 依赖配置文件
-    - local_settings：配置文件
-    - Dockerfile：Docker 配置文件
-  - service-analysis：数据分析服务
-    - logs：日志文件
-    - django_server：应用程序
-    - pids：进程 ID 文件
-    - celery_restart.sh：Celery 重启脚本
-    - celert_start.sh：Celery 启动脚本
-    - celery_stopwait.sh：Celery 停止脚本
-    - manage.py：Django 管理脚本
-    - requirements.txt：Python 依赖配置文件
-    - local_settings：配置文件
-    - Dockerfile：Docker 配置文件
-    - start.sh：启动脚本
-- .env：环境变量配置文件
-- docker-compose.yml：Docker 配置文件
-- README.md：项目说明文档
-
-## 三、项目启动
-### 1、本地启动
-- 前端启动
-进入 frontend 目录，执行以下命令启动前端项目（前提需要安装node服务可以参考官网安装）：
+## Project structure
+- frontend: Frontend project
+  - public: Static resources
+  - src: Source code
+    - api: API interface
+    - components: Components
+    - router: Router
+    - store: State management
+    - utils: Utility functions
+    - App.vue: Main application component
+    - main.js: Entry file
+  - .env.development: Development environment configuration file
+  -.env.production: Production environment configuration file
+  - babel.config.js: Babel configuration file
+  - package.json: Project dependency configuration file
+  - vue.config.js: Vue configuration file
+- backend: Backend project
+  - service-api: API service
+    - excel: Excel temporary file processing module
+    - logs: Log files
+    - plant_marker: Application
+    - static: Static files
+    - temps: Temporary files
+    - manage.py: Django management script
+    - requirements.txt: Python dependency configuration file
+    - local_settings: Configuration file
+    - Dockerfile: Docker configuration file
+  - service-analysis: Data analysis service
+    - logs: Log files
+    - django_server: Application
+    - pids: Process ID files
+    - celery_restart.sh: Celery restart script
+    - celert_start.sh: Celery start script
+    - celery_stopwait.sh: Celery stop script
+    - manage.py: Django management script
+    - requirements.txt: Python dependency configuration file
+    - local_settings: Configuration file
+    - Dockerfile: Docker configuration file
+    - start.sh: Start script
+-.env: Environment variable configuration file
+- docker-compose.yml: Docker configuration file
+- README.md: Project description document
+## Project startup
+### Local startup
+- Frontend startup
+Enter the frontend directory, execute the following command to start the frontend project (assuming you have installed the node service, you can refer to the official website for installation):
   ```bash
   npm install
   npm run dev
   ```
-- 后端启动
-进入 backend 目录（需要本地安装python3.9，已经安装mysql数据库服务），
-  - 启动 service-api 服务，进入到service-api目录（根据自己本地的数据库配置修改local_settings.py数据库信息）：
-  执行以下命令启动：
+- Backend startup     
+Enter the backend directory (assuming you have installed Python 3.9 and have installed the MySQL database service locally),
+  - Start the service-api service, enter the service-api directory (modify the local_settings.py database information according to your local database configuration):
+  Execute the following command to start:
     ```bash
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
     python manage.py runserver 0.0.0.0:8001
-    ``` 
-  - 启动 service-analysis 服务， 进入到service-analysis目录（根据自己本地的数据库配置修改local_settings.py数据库信息）：
-  执行以下命令启动：
+    ```
+  - Start the service-analysis service, enter the service-analysis directory (modify the local_settings.py database information according to your local database configuration):
+  Execute the following command to start:
     ```bash
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
-    python manage.py runserver 0.0.0.0:8002
-    ``` 
-### 2、Docker 启动
-#### Docker 启动项目说明文档
-##### 1、前提条件
-在使用 Docker 启动本项目之前，请确保你的系统已经安装了 Docker。不同操作系统安装 Docker 的方法如下：
-- Linux 系统
-以 Ubuntu 为例，打开终端，依次执行以下命令：
-sudo apt update
-sudo apt install docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
-对于其他 Linux 发行版，可以参考Docker 官方文档进行安装。
-- macOS 系统
-在 macOS 上，可以通过 Docker Desktop 进行安装。前往Docker 官方网站下载适合你系统版本的 Docker Desktop 安装包，双击安装包并按照提示完成安装。安装完成后，启动 Docker Desktop 即可。
-- Windows 系统
-Windows 用户同样可以使用 Docker Desktop 进行安装。访问Docker 官方网站，下载 Windows 版本的 Docker Desktop，安装过程中根据提示进行操作。安装完成后，打开 Docker Desktop，等待其初始化完成。
-###### 2、项目配置
-- 环境变量配置
-本项目通过环境变量进行配置，在启动容器之前，需要根据实际需求设置环境变量。在项目根目录的.env文件，将文件配置替换为实际的数据库配置信息或其他项目所需的配置信息。
-- docker-compose.yml 说明
-因为项目包含多个服务（如后端服务、数据库服务等），使用docker-compose.yml文件来定义和管理这些服务。
+
+  Execute the following command to start:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    python manage.py runserver IP_ADDRESS    python manage.py runserver 0.0.0.0:8002
+    ```
+### Docker startup
+#### Docker startup project documentation
+##### Prerequisites
+Before using Docker to start this project, make sure your system has Docker installed. Installation methods for different operating systems are as follows:
+- Linux system
+For Ubuntu, open the terminal and execute the following commands:
+  ```bash
+  sudo apt update
+  sudo apt install docker.io
+  sudo systemctl start docker
+  sudo systemctl enable docker
+  ```
+For other Linux distributions, refer to the Docker official documentation for installation.
+- macOS system
+In macOS, you can install Docker Desktop. Visit the Docker official website to download the Windows version of Docker Desktop, and follow the instructions to complete the installation. After installation, start Docker Desktop.
+- Windows system
+Windows users can also install Docker Desktop. Visit the Docker official website, download the Windows version of Docker Desktop, and follow the instructions to complete the installation. After installation, open Docker Desktop, and wait for it to initialize.
+##### Project configuration
+- Environment variable configuration
+This project uses environment variables for configuration. Before starting the container, you need to set the environment variables according to the actual requirements. In the root directory of the .env file, replace the file configuration with actual database configuration information or other project required configuration information.
+- docker-compose.yml description
+Because the project contains multiple services (such as frontend services, backend services, etc.), use docker-compose.yml to define and manage these services.
 ```yaml
 services:
   # ---------------------- 前端服务 ----------------------
   frontend:
-    build: ./frontend
+    build:./frontend
     volumes:
       # - /宿主机路径:/容器内路径:选项(权限)
-      - ./data:/data
+      -./data:/data
     ports:
       - "80:80"
     depends_on:
@@ -108,49 +115,41 @@ services:
       - service-analysis
     networks:
       - app-network
-
   # ---------------------- 后端服务 ----------------------
   service-api:
-    build: ./backend/service-api
+    build:./backend/service-api
     environment:
       - DB_HOST=db
       - DB_API_NAME=${DB_API_NAME}
-      - DB_USER=${DB_USER}
+      - DB_USER=${DB_USER} 
       - DB_PASSWORD=${DB_PASSWORD}
       - API_BASE_URL=${API_BASE_URL}
     depends_on:
       - db
     networks:
       - app-network
-
   service-analysis:
-    build: ./backend/service-analysis
+    build:./backend/service-analysis
     environment:
       - DB_HOST=db
       - DB_ANALYSIS_NAME=${DB_ANALYSIS_NAME}
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
-      - ANALYSIS_BASE_URL=${ANALYSIS_BASE_URL}
+      - API_BASE_URL=${API_BASE_URL}
     depends_on:
       - db
       - rabbitmq
     networks:
       - app-network
-
-  # ---------------------- 共享服务 ----------------------
   db:
     image: mysql:8.0
     volumes:
       - mysql-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${DB_API_NAME}, ${DB_ANALYSIS_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASSWORD}
-    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+      MYSQL_DATABASE: ${DB_API_NAME}
     networks:
       - app-network
-
   rabbitmq:
     image: rabbitmq:3.12.13-management-alpine
     volumes:
@@ -163,47 +162,65 @@ services:
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
     networks:
       - app-network
-
 networks:
   app-network:
-
 volumes:
   mysql-data:
   rabbitmq-data:
 ```
-项目中，定义了多个服务：frontend服务用于运行项目的前端应用，service-api 服务用与运行项目的后端API服务，service-analysis 服务用于运行项目的后端service-analysis服务和Celery异步任务服务器，db 服务使用 MySQL 8.0 镜像作为数据库服务，rabbitmq服务使用 3.12.13-management-alpine 镜像作为消息队列服务。frontend服务依赖于service-api和service-analysis服务，并且通过端口映射将容器内的 80 端口映射到主机的 80 端口，同时将环境变量传递给容器。service-api服务依赖于db服务，并且通过端口映射将容器内的 8001 端口映射到主机的 8001 端口，同时将环境变量传递给容器。service-analysis服务依赖于db和rabbitmq服务并且通过端口映射将容器内的 8001 端口映射到主机的 8001 端口，同时将环境变量传递给容器。db服务则通过环境变量设置数据库的 root 密码和数据库名称，并使用卷来持久化存储数据库数据。rabbitmq服务则通过环境变量设置用户名和密码，并使用卷来持久化存储数据库数据。
-##### 3、启动项目
-- 使用docker-compose.yml管理项目，执行以下命令启动项目：
-```bash
-docker-compose up -d
-```
--d参数表示以后台模式运行容器。启动完成后，可以通过浏览器访问http://localhost:80（假设项目运行在 80 端口）来查看项目是否正常启动。
-###### 4、常见问题及解决方法
-- 端口冲突
-如果在启动容器时遇到端口冲突的问题，例如提示Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:8000 -> 0.0.0.0:0: listen tcp 0.0.0.0:8000: bind: address already in use，说明主机上的 8000 端口已经被其他进程占用。可以通过以下方式解决：
-关闭占用该端口的进程。使用lsof -i:8000命令查看占用 8000 端口的进程，然后使用kill命令终止该进程。例如，如果查看结果显示进程 ID 为1234，则执行kill 1234。
-修改项目的端口映射。在Dockerfile或docker-compose.yml文件中，将端口映射修改为其他未被占用的端口，如8080。
-- 依赖安装失败
-如果在构建镜像过程中，出现依赖安装失败的情况，例如提示Could not find a version that satisfies the requirement <package_name>，可能是因为依赖包的版本不兼容或无法从默认的包源获取。可以尝试以下解决方法：
-检查requirements.txt文件中依赖包的版本是否正确，确保版本号与项目兼容。
-更换包源。例如，在requirements.txt文件中指定使用国内的包源，如清华大学的 PyPI 镜像：
--i https://pypi.tuna.tsinghua.edu.cn/simple
+- Docker-compose description
+The docker-compose.yml file defines the services (such as frontend services, backend services, etc.) of the project. The services are defined in the services section, and each service is defined in a separate section.
+In the project, multiple services were defined: the frontend service is used to run the front-end application of the project, the service-api service is used to run the back-end API service of the project, the service-analysis service is used to run the back-end service-analysis service and the Celery asynchronous task server, the db service uses the MySQL 8.0 image as the database service, and the rabbitmq service uses the 3.12.13-management-alpine image as the message queue service. The frontend service depends on the service-api and service-analysis services, and maps the 80 port inside the container to the 80 port on the host through port mapping, while passing environment variables to the container. The service-api service depends on the db service, and maps the 8001 port inside the container to the 8001 port on the host through port mapping, while passing environment variables to the container. The service-analysis service depends on the db and rabbitmq services and maps the 8001 port inside the container to the 8001 port on the host through port mapping, while passing environment variables to the container. The db service sets the root password and database name of the database through environment variables and uses volumes to persistently store the database data. The rabbitmq service sets the username and password through environment variables and uses volumes to persistently store the database data. The app-network network is used to connect the services, and the mysql-data and rabbitmq-data volumes are used to persistently store the database data.
+##### Start the project
+- Use docker-compose.yml to manage the project and execute the following command to start the project:
+  ```bash
+  docker-compose up -d
+  ```
 
-或者在Dockerfile中安装依赖时指定包源：
-RUN pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
-
-- 容器无法正常启动
-如果容器启动后很快退出，没有正常运行项目，可以通过以下命令查看容器的日志，以获取更多错误信息：
-docker logs myproject-container
-
-上述命令中的myproject-container是容器的名称，根据实际情况进行替换。通过查看日志，可以定位到具体的错误原因，如代码语法错误、配置文件读取失败等，并进行相应的修复。
-###### 5、停止和删除项目
-- 停止容器：
-执行以下命令停止所有服务：
-docker-compose down
-
-- 删除容器
-停止容器后，可以执行以下命令删除容器：
-docker-compose down --volumes
-
-通过以上步骤，你应该能够顺利使用 Docker 启动本项目。如果在操作过程中遇到其他问题，随时联系iPscDB的开发团队或查阅Docker官方文档。
+-d parameter runs the container in the background. After starting the project, you can access the project through the browser at URL_ADDRESS-d parameter runs the container in the background. After starting the project, you can access the project through the browser at http://localhost:80 (assuming the project runs on port 80).
+###### Common problems and solutions
+- Port conflict 
+If you encounter port conflicts when starting the container, for example, when executing docker-compose up -d, you will see an error message similar to the following:
+  ```bash
+  Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:8000 -> 0.0.0.0:0: listen tcp 0.0.0.0:8000: bind: address already in use
+  ```
+This means that the host port 8000 is already in use by another process. You can solve this problem by:
+Closing the process using the host port 8000. Use the lsof -i:8000 command to view the process using the host port 8000, and then use the kill command to terminate the process. For example, if the view result shows the process ID as 1234, execute kill 1234.
+Modify the project port mapping. In the Dockerfile or docker-compose.yml file, modify the port mapping to an unused port, such as 8080.
+- Dependency installation failure
+If you encounter dependency installation failures during the image build process, for example, when executing docker-compose up -d, you will see an error message similar to the following:
+  ```bash
+  Could not find a version that satisfies the requirement <package_name>
+  ```
+This means that the dependency package version is not compatible or cannot be obtained from the default package source. You can try the following solutions:
+Check the requirements.txt file for dependency package version compatibility. Ensure that the version number is compatible with the project.
+Replace the package source. For example, in the requirements.txt file, specify a domestic package source, such as the PyPI mirror of the Tsinghua University:
+  ```bash
+Replace the package source. For example, in the requirements.txt file, specify a domestic package source, such as the PyPI mirror of the Tsinghua University:
+  ```bash
+  -i URL_ADDRESS  -i https://pypi.tuna.tsinghua.edu.cn/simple
+  ```
+Or in the Dockerfile, install dependencies with the specified package source:
+  ```bash
+Or in the Dockerfile, install dependencies with the specified package source:
+bash
+  RUN pip install --no-cache-dir -i URL_ADDRESS  RUN pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+  ```
+- Container startup failure
+If the container starts and exits quickly without running the project, you can view the container logs to get more error information:
+  ```bash
+  docker logs myproject-container
+  ```
+The command above shows the container name as myproject-container. Replace it with the actual container name. By viewing the logs, you can locate the specific error reason, such as syntax errors in the code, failed configuration file reading, etc., and make the necessary fixes.
+###### Stop and delete the project
+- Stop the container:
+Execute the following command to stop all services:
+  ```bash
+  docker-compose down
+  ```
+- Delete the container
+Stop the container and then execute the following command to delete the container:
+  ```bash
+  docker-compose down --volumes
+  ```
+By following these steps, you should be able to successfully start this project using Docker. If you encounter other problems during operation, please contact the development team of iPscDB or refer to the official documentation of Docker.
