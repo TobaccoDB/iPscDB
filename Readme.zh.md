@@ -3,6 +3,7 @@
 - iPscDB 是一个单细胞转录组数据资源库，其中包含了细胞标记物、单细胞图谱以及丰富的数据分析工具。目前，已收集了 23 种模式植物的数据，包括拟南芥、水稻、玉米、番茄和烟草等，涵盖了超过 270，480 个标记基因和超过 300 万份单细胞数据，为不同植物和组织中的细胞整合及单细胞研究提供了全面且相对准确的细胞标记物和细胞图谱。
 - 系统网址：https://www.tobaccodb.org/ipscdb/homePage
 - 代码地址：https://github.com/TobaccoDB/iPscDB.git
+- 演示视频：https://www.tobaccodb.org/server_ipscdb/source_material/other/ipscdb.mp4
 
 ## 二、项目结构
 - frontend：前端项目
