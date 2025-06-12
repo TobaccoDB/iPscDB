@@ -4,6 +4,7 @@
 - iPscDB is a single cell transcriptomic data resource that includes cell markers, single cell maps, and a wealth of data analysis tools. At present, data from 23 species of model plants, including Arabidopsis thaliana, rice, corn, tomato, and tobacco, including more than 270,480 marker genes and more than 3 million single cell data, have been collected, providing comprehensive and relatively accurate cell markers and cell maps for cell integration and single cell research in different plants and tissues.
 - System website: https://www.tobaccodb.org/ipscdb/homePage
 - Github: https://github.com/TobaccoDB/iPscDB.git
+- Demo video: https://www.tobaccodb.org/server_ipscdb/source_material/other/ipscdb.mp4
 
 ## Project structure
 - frontend: Frontend project
