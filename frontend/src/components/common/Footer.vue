@@ -1,23 +1,22 @@
 <template>
     <div class="footer">
-        <!-- <div class="footer-header">
-      <div class="footer-header-left">
-        <div>{{ totalviewData }}</div>
-        <div>Total views</div>
-      </div>
-      <ul class="footer-header-right">
-        <li v-for="(item, key) in viewData" :key="key">
-          <div>{{ item.count }}</div>
-          <div :style="item.position"></div>
-        </li>
-      </ul>
-    </div> -->
-        <!-- <div class="footer-middle"></div> -->
+        <div class="footer-header">
+            <div class="footer-header-left">
+                <div>{{ totalviewData }}</div>
+                <div>Total views</div>
+            </div>
+            <ul class="footer-header-right">
+                <li v-for="(item, key) in viewData" :key="key">
+                    <div>{{ item.count }}</div>
+                    <div :style="item.position"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-middle"></div>
         <div class="footer-footer">
             <span>
                 <i></i>
-                <i></i>E-mail:tobaccodb@gmail.com</span
-            >
+                <i></i>E-mail:tobaccodb@gmail.com</span>
         </div>
     </div>
 </template>
@@ -121,7 +120,7 @@ export default {
         }
     },
     mounted() {
-        // this.post_detail();
+        this.post_detail();
     },
     methods: {
         post_detail() {
@@ -142,129 +141,130 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer {
-    width: 100%;
-    height: 70px;
-    background: #f4f4f4;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 999999;
+  width: 100%;
+  height: 160px;
+  //   height: 70px;
+  background: #f4f4f4;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999999;
 
-    .footer-footer {
-        // height: 73px;
-        // line-height: 73px;
-        height: 70px;
-        line-height: 70px;
-        float: left;
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-        font-family: PingFang SC;
-        font-weight: 500;
-        color: rgba(51, 51, 51, 1);
-        background: #b2dbc6;
-        i {
-            display: inline-block;
-            width: 60px;
-            height: 40px;
-            position: absolute;
-            top: 15px;
-            // top: 12px;
-            left: 0;
-        }
-        span i:first-child {
-            background: url(~@/assets/img/footerIcon1.png) no-repeat 100%;
-            background-size: contain;
-        }
-        span i:nth-child(2) {
-            background: url(~@/assets/img/footerIcon2.png) no-repeat 100%;
-            background-size: contain;
-            left: 74px;
-        }
-        span {
-            display: inline-block;
-            position: relative;
-            padding-left: 150px;
-        }
-    }
-}
-.footer .footer-header {
+  .footer-footer {
+    height: 73px;
+    line-height: 73px;
+    // height: 160px;
+    // line-height: 160px;
     float: left;
     width: 100%;
-    height: 87px;
-    display: flex;
-    justify-content: center;
-}
-.footer .footer-header .footer-header-left {
-    margin: 0;
-    padding: 0;
-    float: left;
-    width: 120px;
-    overflow: hidden;
-}
-.footer .footer-header .footer-header-left div:first-child {
-    margin-top: 20px;
-    width: 100%;
-    height: 22px;
-    font-size: 24px;
+    text-align: center;
+    font-size: 18px;
     font-family: PingFang SC;
     font-weight: 500;
-    color: #333;
-    line-height: 22px;
-    text-align: center;
+    color: rgba(51, 51, 51, 1);
+    // background: #b2dbc6;
+    i {
+      display: inline-block;
+      width: 60px;
+      height: 40px;
+      position: absolute;
+      top: 15px;
+      // top: 12px;
+      left: 0;
+    }
+    span i:first-child {
+      background: url(~@/assets/img/footerIcon1.png) no-repeat 100%;
+      background-size: contain;
+    }
+    span i:nth-child(2) {
+      background: url(~@/assets/img/footerIcon2.png) no-repeat 100%;
+      background-size: contain;
+      left: 74px;
+    }
+    span {
+      display: inline-block;
+      position: relative;
+      padding-left: 150px;
+    }
+  }
+}
+.footer .footer-header {
+  float: left;
+  width: 100%;
+  height: 87px;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-header .footer-header-left {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 120px;
+  overflow: hidden;
+}
+.footer .footer-header .footer-header-left div:first-child {
+  margin-top: 20px;
+  width: 100%;
+  height: 22px;
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333;
+  line-height: 22px;
+  text-align: center;
 }
 
 .footer .footer-header .footer-header-left div:last-child {
-    margin-top: 15px;
-    width: 100%;
-    height: 16px;
-    font-size: 20px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #666;
-    line-height: 16px;
-    text-align: center;
+  margin-top: 15px;
+  width: 100%;
+  height: 16px;
+  font-size: 20px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #666;
+  line-height: 16px;
+  text-align: center;
 }
 .footer .footer-header .footer-header-right {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-    width: 1120px;
-    height: 87px;
-    overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 1120px;
+  height: 87px;
+  overflow: hidden;
 }
 .footer .footer-header .footer-header-right li {
-    margin: 0;
-    float: left;
-    width: 12.5%;
-    height: 100%;
+  margin: 0;
+  float: left;
+  width: 12.5%;
+  height: 100%;
 }
 
 .footer .footer-header .footer-header-right li div:first-child {
-    margin-top: 23px;
-    width: 100%;
-    font-size: 20px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #333;
-    line-height: 16px;
-    height: 16px;
-    text-align: center;
+  margin-top: 23px;
+  width: 100%;
+  font-size: 20px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333;
+  line-height: 16px;
+  height: 16px;
+  text-align: center;
 }
 
 .footer .footer-header .footer-header-right li div:last-child {
-    margin: 0 auto;
-    margin-top: 10px;
-    height: 28px;
-    width: 30px;
-    background: url(../../assets/img/flags_test.png) no-repeat;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 28px;
+  width: 30px;
+  background: url(../../assets/img/flags_test.png) no-repeat;
 }
 
 .footer .footer-middle {
-    width: 100%;
-    height: 1px;
-    margin: 0 auto;
-    background: rgba(225, 228, 230, 1);
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background: rgba(225, 228, 230, 1);
 }
 </style>

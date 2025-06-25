@@ -160,7 +160,8 @@ export default {
     -webkit-transition: left 0.3s ease-in-out;
     transition: left 0.3s ease-in-out;
     background: #fafafa;
-    padding-bottom: 70px;
+    padding-bottom: 160px;
+    // padding-bottom: 70px;
   }
 
   .content {

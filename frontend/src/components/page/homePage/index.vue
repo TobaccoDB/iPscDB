@@ -68,7 +68,8 @@
                 <!-- 真正的幻灯片区域 -->
                 <div class="home_page_banner-main-centent">
                     <div class="home_page_banner-main-centent-main" ref="bannerMain" :style="{ left: -activeIndex * 208 + 'px' }">
-                        <div class="home_page_banner-main-centent-item" v-for="(item, index) in listItem" :key="index" @mouseover="mouseleaveItem(index)" @mouseout="mouseoutItem">
+                        <div class="home_page_banner-main-centent-item" v-for="(item, index) in listItem" :key="index" @mouseover="mouseleaveItem(index)"
+                            @mouseout="mouseoutItem">
                             <div class="home_page_banner-main-centent-item-public home_page_banner-main-centent-item-top">
                                 <div class="grid-content grid-content-item">
                                     <i class="title">{{ item.label }}</i>
@@ -93,26 +94,14 @@
                                                 @click="imgClick(item.name, tissue, index, i, item)"
                                             /> -->
                                             <div class="ul-content-li">
-                                                <img
-                                                    v-if="tissue.Tissue != 'WholePlant' && i < 5"
-                                                    :class="{ active: cur[index] == i }"
-                                                    :style="tissue.is_show == '1' ? 'cursor: pointer;' : 'filter: grayscale(100%) opacity(40%);'"
-                                                    :src="tissue.tissue_head_link"
-                                                    v-for="(tissue, i) in item.data"
-                                                    :key="i"
-                                                    @click="imgClick(item.name, tissue, index, i, item)"
-                                                />
+                                                <img v-if="tissue.Tissue != 'WholePlant' && i < 5" :class="{ active: cur[index] == i }" :style="tissue.is_show == '1' ? 'cursor: pointer;' : 'filter: grayscale(100%) opacity(40%);'"
+                                                    :src="tissue.tissue_head_link" v-for="(tissue, i) in item.data" :key="i"
+                                                    @click="imgClick(item.name, tissue, index, i, item)" />
                                             </div>
                                             <div class="ul-content-li">
-                                                <img
-                                                    v-if="tissue.Tissue != 'WholePlant' && i >= 5"
-                                                    :class="{ active: cur[index] == i }"
-                                                    :style="tissue.is_show == '1' ? 'cursor: pointer;' : 'filter: grayscale(100%) opacity(40%);'"
-                                                    :src="tissue.tissue_head_link"
-                                                    v-for="(tissue, i) in item.data"
-                                                    :key="i"
-                                                    @click="imgClick(item.name, tissue, index, i, item)"
-                                                />
+                                                <img v-if="tissue.Tissue != 'WholePlant' && i >= 5" :class="{ active: cur[index] == i }" :style="tissue.is_show == '1' ? 'cursor: pointer;' : 'filter: grayscale(100%) opacity(40%);'"
+                                                    :src="tissue.tissue_head_link" v-for="(tissue, i) in item.data" :key="i"
+                                                    @click="imgClick(item.name, tissue, index, i, item)" />
                                             </div>
                                         </li>
                                     </ul>
@@ -123,7 +112,8 @@
                 </div>
                 <!-- 指针 -->
                 <div class="home_page_pointer">
-                    <span class="home_page_pointer-index" :class="pointerActive == item - 1 ? 'home_page_pointer-indexActive' : ''" v-for="item in 6" :key="item"></span>
+                    <span class="home_page_pointer-index" :class="pointerActive == item - 1 ? 'home_page_pointer-indexActive' : ''" v-for="item in 6"
+                        :key="item"></span>
                 </div>
             </div>
         </div>
@@ -141,14 +131,52 @@
             </div>
             <!-- 右侧 -->
             <div class="home_page_switch_right">
-                <div class="home_page_switch_right-title">Statistics</div>
-                <div class="homepage_statistics_right">
-                    <div class="sta_right_content sta_right_content-main">
-                        <dl v-for="(item, index) in AtlasListRight" :key="index">
-                            <dt></dt>
-                            <dd>{{ item.value }}</dd>
-                            <dd>{{ item.name }}</dd>
-                        </dl>
+                <div class="home_page_switch_right1">
+                    <div class="home_page_switch_right-title">Statistics</div>
+                    <div class="homepage_statistics_right">
+                        <div class="sta_right_content sta_right_content-main">
+                            <dl v-for="(item, index) in AtlasListRight" :key="index">
+                                <dt></dt>
+                                <dd>{{ item.value }}</dd>
+                                <dd>{{ item.name }}</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_page_switch_right2">
+                    <div class="home_page_switch_right-title" style="height:35px;">Follow iPscDB</div>
+                    <!-- <div class="home_page_switch_right-title" style="height:30px;">FOLLOW iPscDB</div> -->
+                    <div class="homepage_statistics_right">
+                        <div class="sta_right_content sta_right_content-main">
+                            <dl>
+                                <dt></dt>
+                                <dd>
+                                    <a href="https://github.com/TobaccoDB/iPscDB.git" target="_blank">
+                                        TobaccoDB/iPscDB
+                                    </a>
+                                </dd>
+                            </dl>
+                            <!-- <dl style="width:50%;">
+                                <dt></dt>
+                                <dd>
+                                    <a href="https://x.com/TobaccoDB2" target="_blank">
+                                        @iPscDB
+                                    </a>
+                                </dd>
+                            </dl>
+                            <dl style="width:50%;">
+                                <dt></dt>
+                                <dd>
+                                    <div class="image-hover-simple">
+                                        <img v-show="showImage" width="190" :src="code" alt="二维码" class="hover-image" />
+                                        <span @mouseenter="showImage = true" @mouseleave="showImage = false">
+                                            植物单细胞iPscDB
+                                        </span>
+
+                                    </div>
+                                </dd>
+                            </dl> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,6 +232,8 @@ export default {
     components: {},
     data() {
         return {
+            code: require('@/assets/img/code.jpg'),
+            showImage: false,
             AtlasListRight: [],
             logsList: [
                 {
@@ -392,14 +422,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './style.scss';
+@import "./style.scss";
 </style>
 
 <style scoped>
 >>> .el-tabs__item.is-active {
-    color: #24a461 !important;
+  color: #24a461 !important;
 }
 >>> .el-tabs__active-bar {
-    background-color: #24a461 !important;
+  background-color: #24a461 !important;
 }
 </style>
