@@ -1,6 +1,0 @@
-.idea
-**/logs
-/venv/
-*.pyc
-*.log
-**/__pycache__

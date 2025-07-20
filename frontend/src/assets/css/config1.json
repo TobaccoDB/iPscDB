@@ -1,7 +1,0 @@
-{
-    "global": {
-        "$--color-primary": "#24A461",
-        "$--color-text-primary": "#666666"
-    },
-    "local": {}
-}
