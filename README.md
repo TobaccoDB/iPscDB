@@ -202,7 +202,12 @@ Zea mays                      | 379,566   |           115 |         12 |        
 
 ## Figure legends
 - Figure 1. The overall design of the iPscDB database.
+<img width="5222" height="3810" alt="Figure1" src="https://github.com/user-attachments/assets/db3eae7d-37d6-46e3-aded-7787614bf375" />
 - Figure 2. The dedicated function of atlases and genes. (A) Species atlas information and a summary of datasets deposited in iPscDB. (B) The UMAP display of Arabidopsis whole-plant atlas. (C) Detailed information on marker genes for Arabidopsis (The orange star indicates that the marker is a classic marker). (D) The expression pattern of a queried single gene RCI3 (AT1G05260) in the Arabidopsis whole-plant atlas.
+<img width="5222" height="3810" alt="Figure2" src="https://github.com/user-attachments/assets/c6fb93c8-57d0-480d-a6d3-c3a3fb732f71" />
 - Figure 3. The Marker module for cell marker exploration. (A) Overview of annotated cell types in 23 specific plant species. (B) Detailed information of a specific cell type (Arabidopsis root epidermis as an example). (C) Summarized marker information of a specific cell type in Arabidopsis. (D) Characterization and analysis of a specific marker gene. (E) Search function using different search engines.
+<img width="5222" height="3832" alt="Figure3" src="https://github.com/user-attachments/assets/504dfe6d-6015-4828-9804-74113cb47f98" />
 - Figure 4. The input and output steps for the online data analysis pipeline. (A) Workflow and user input requirements of the online analysis pipeline. (B) User-defined analysis parameters via online data processing. (C) Supports drag-and-drop uploads of various file formats. (D) Interactive interface for viewing job completion and results. (E) Module for online UMAP figure editing.
+<img width="5222" height="3897" alt="Figure4" src="https://github.com/user-attachments/assets/ef611615-0f06-4f55-b230-8b68ffdc82a9" />
 - Figure 5. Diverse primary analysis tools of iPscDB. (A) The cross-species gene expression pattern of Gossypium hirsutum in Arabidopsis, rice and maize; (B) Expression pattern of GIF2 (AT1G01160) in Arabidopsis root as visualized in eSCP. (C) Developmental trajectory of the atrichoblast cell type in Arabidopsis root and information on differentially expressed genes (DEGs). (D) Cell type identification following two-rounds of prediction with Plant CellID.
+<img width="5222" height="3916" alt="Figure5" src="https://github.com/user-attachments/assets/6dcdac03-359f-4eab-939a-72da3bac8910" />
