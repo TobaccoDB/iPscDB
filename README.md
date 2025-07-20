@@ -1,32 +1,7 @@
 # iPscDB
 ![17293d1c48780bb6fb9901ad9d14ac19](https://github.com/user-attachments/assets/7bffed40-96b3-4340-a57f-3b3023d4aadc)
-a versatile platform of plant cell atlases at the single-cell level
-Peng Lu<sup>1,2†</sup>, Jingjing Jin <sup>1,2†</sup>, Jiemeng Tao<sup>1,2†</sup>, Linggai Cao<sup>4</sup>, Shizhou Yu<sup>4</sup>, Sujie Wang<sup>2</sup>, Huan Su<sup>2</sup>, Qiao Wang<sup>2</sup>, Runtong Hou<sup>1</sup>, Jingcheng Zhang<sup>1</sup>, Zefeng Li<sup>2</sup>, He Li<sup>2</sup>, Jianfeng Zhang<sup>1</sup>, Yalong Xu<sup>2</sup>, Yangyang Wu<sup>3*</sup>, Xuwu Sun<sup>5*</sup>, Peijian Cao<sup>1,2*</sup>
-  - <sup>1</sup> Beijing Life Science Academy, Beijing 102200, China
-  - <sup>2</sup> China Tobacco Gene Research Center, Zhengzhou Tobacco Research Institute of CNTC, Zhengzhou 450001, China
-  - <sup>3</sup> School of Software Technology, Zhejiang University, Ningbo 315048, China
-  - <sup>4</sup> Guizhou Academy of Tobacco Science, Guiyang 550081, China
-  - <sup>5</sup> Key Laboratory of Plant Stress Biology, School of Life Sciences, Henan University, Kaifeng 475001, China
-- Correspondence: 
-  - Peng Lu lu.peng@zju.edu.cn
-  - Jingjing Jin jin.jingjing@zju.edu.cn
-  - Jiemeng Tao taojiemeng@zju.edu.cn
-  - Linggai Cao cao.linggai@zju.edu.cn
-  - Shizhou Yu yu.shizhou@zju.edu.cn
-  - Sujie Wang wang.sujie@zju.edu.cn
-  - Huan Su su.huan@zju.edu.cn
-  - Qiao Wang wang.qiao@zju.edu.cn
-  - Runtong Hou hou.runtong@zju.edu.cn
-  - Jingcheng Zhang zhang.jingcheng@zju.edu.cn
-  - Zefeng Li li.zefeng@zju.edu.cn
-  - He Li
-  - Peijian Cao peijiancao@163.com
-  - Xuwu Sun sunxuwu@shnu.edu.cn
-  - Yangyang Wu zjuwuyy@zju.edu.cn
-  - <sup>†</sup>These authors contributed equally to this study
-
-## Keywords
-Single-cell; Multiple species; Cell atlas; Database; Pipeline
+- System website: https://www.tobaccodb.org/ipscdb/homePage
+- Demo video: https://www.tobaccodb.org/server_ipscdb/source_material/other/ipscdb.mp4
 ## Abstract
 The rapid advancement of single-cell technologies has significantly enhanced our ability to investigate cellular diversity and heterogeneity within plant tissues. However, analyzing this complexity in plants involves generating different data types to enable marker selection, cell identification, and other computational operations. These processes typically require broad programming expertise, posing a challenge for researchers with a limited computational background. To address this, we present iPscDB, a comprehensive and multifunctional platform that facilitates the integration and analysis of plant single-cell data. iPscDB combines over 3.5 million cells and 274 thousand markers derived from 789 experiments, covering 35 tissue types and 276 annotated cell types across 23 plant species. More importantly, the platform provides a user-friendly online analysis pipeline capable of processing raw FASTQ files. Users can configure parameters via an intuitive interface and utilize an integrated image editor to customize visualization outputs such as UMAP plots. Additionally, iPscDB supports various analyses such as those related to cross-species gene expression, cell-cell interactions, electronic single-cell pictography, and developmental trajectory. By streamlining the complex workflows of single-cell transcriptomics, iPscDB offers a powerful yet accessible solution for researchers with diverse technical backgrounds. iPscDB is accessible at https://www.tobaccodb.org/ipscdb/homePage.
 
