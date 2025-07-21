@@ -5,184 +5,90 @@
 ## Abstract
 The rapid advancement of single-cell technologies has significantly enhanced our ability to investigate cellular diversity and heterogeneity within plant tissues. However, analyzing this complexity in plants involves generating different data types to enable marker selection, cell identification, and other computational operations. These processes typically require broad programming expertise, posing a challenge for researchers with a limited computational background. To address this, we present iPscDB, a comprehensive and multifunctional platform that facilitates the integration and analysis of plant single-cell data. iPscDB combines over 3.5 million cells and 274 thousand markers derived from 789 experiments, covering 35 tissue types and 276 annotated cell types across 23 plant species. More importantly, the platform provides a user-friendly online analysis pipeline capable of processing raw FASTQ files. Users can configure parameters via an intuitive interface and utilize an integrated image editor to customize visualization outputs such as UMAP plots. Additionally, iPscDB supports various analyses such as those related to cross-species gene expression, cell-cell interactions, electronic single-cell pictography, and developmental trajectory. By streamlining the complex workflows of single-cell transcriptomics, iPscDB offers a powerful yet accessible solution for researchers with diverse technical backgrounds. iPscDB is accessible at https://www.tobaccodb.org/ipscdb/homePage.
 
-## Introduction
-- Single-cell sequencing has revolutionized biological research, allowing for the comprehensive characterization of cell types across different species, tissues, and individual cells<sup>[1]</sup>. The power of this technology has enabled the discovery of rare cell types and facilitated the study of gene regulation at the cellular level, thereby deepening our understanding of cellular heterogeneity and molecular mechanisms<sup>[2]</sup>. Over the past few years, there has been a remarkable surge in plant single-cell related studies across a wide range of species, including Arabidopsis, rice, and maize, and various plant tissues such as roots<sup>[3–6]</sup>, shoot apex<sup>[7]</sup>, leaves<sup>[8,9]</sup>, and ears<sup>[10]</sup>. Furthermore, this technology has been successfully employed to investigate cell-specific transcriptional responses to specific environmental conditions, such as low nitrogen, high salinity, and iron deficiency<sup>[3]</sup>, or under higher temperatures<sup>[11]</sup>. Additionally, it has shed light on the evolutionary trajectories of plant tissues, such as root tips, by examining single-cell-level changes and identifying common pathways between species<sup>[12]</sup>.
+## Operating guide
+### Home
+- Function entry: Users can access the system website (https://www.tobaccodb.org/ipscdb/homePage) or click the "Home" tab in the navigation bar.
+- Main function:
+  - 23 species display,click on the organization icon to enter the corresponding "Explore" function.
+  - Database Structure.
+  - Plant CELLiD.
+  - Statistics.
+  - Follow iPscDB.
 
-- The exponential growth of single-cell data has created a demand for the development of databases and tools to accommodate and explore such massive information. To address this need, several specialized single-cell databases have been created. However, most of them, including Single-cell Analyst<sup>[13]</sup>, DISCO<sup>[14]</sup>, CellTracer<sup>[15]</sup>, and Cell Landscape<sup>[16]</sup>, cater specifically for single-cell information derived from humans and animals. Analogous databases for use by the plant research community remain limited. Some current plant single-cell related databases, including Plant Cell Marker DataBase (PCMDB)<sup>[17]</sup>, Plant Single Cell Transcriptome Hub (PsctH)<sup>[18]</sup>, PlantscRNAdb<sup>[19]</sup> and scPlantDB<sup>[20]</sup>, focus mainly on the collation of cell markers and provide limited analytical tools, and most of these databases have not been regularly updated after their initial publication. A more recent database, the Plant Cell Atlas (PCA)<sup>[21]</sup>, functions more as a community platform for single-cell research, actively disseminating the latest advances in plant single-cell studies and providing links to high-quality databases. Some databases, such as the Plant sc-RNA-Seq Browser (PscB)<sup>[22]</sup> and scCloudMine<sup>[23]</sup>, focus on the visualization of single-cell sequencing datasets of specific tissues or plants. When compared with available databases for humans, the functional modules are much simpler for plants (Table 1). Currently, plant single-cell research lacks a comprehensive database that integrates up-to-date cellular and gene expression data, which also provides analytical pipelines and a rich set of tools to meet the diverse needs of researchers in this field. Therefore, the development of a multifunctional scRNA-seq database that incorporates data from various plant species is both timely and essential.
-
-- Here, we present iPscDB (integrated Plant single-cell Database), a comprehensive resource that integrates plant single-cell datasets, contains a large number of cell markers, offers one-step online pipelines for single-cell data processing, and provides a wide range of functional tools. The extensive collection of marker genes and comprehensive cell atlases at both tissue and whole plant levels, provides a rich and reliable data resource, enabling researchers to investigate cellular heterogeneity and gene expression patterns across various plant tissues and conditions. The integrated, one-step online analysis pipeline significantly lowers existing barriers that impede single-cell data analysis, facilitating broader participation in plant single-cell research. Furthermore, the inclusion of multiple analytical tools empowers users to conduct downstream studies such as cross-species expression pattern comparisons and trajectory inference analyses. In summary, iPscDB functions as an all-inclusive and versatile platform, representing an essential resource for advancing plant research at the single-cell level.
-
-## Results
-- Overview of iPscDB:
-iPscDB is a comprehensive, high‑quality repository for plant single‑cell transcriptome data. To maximize its utility, we designed a modern, user‑friendly web portal that (i) stores and curates multi‑species datasets, (ii) presents gene‑expression patterns through interactive visualization, and (iii) provides an online analysis pipeline (Figure 1). The database currently contains over 3.5 million cells and 274 thousand markers collected from 789 experiments conducted on 23 species. The platform is organized into six functional modules: Browser, Atlas, Marker, Search, Pipeline and Tools, thereby offering a one-stop solution for plant single-cell studies. Its principal advantages are the breadth and curation quality of the underlying data and the availability of intuitive, interactive workflows that guide users from raw data input to biological insight without the need for extensive bioinformatics expertise. iPscDB is actively maintained, with regular incorporation of newly published datasets and analytical methods, ensuring that it remains a current and valuable resource for the plant science community.
-
-- Atlas exploration
-A total of 23 global atlases and 35 tissue sub-atlases are available in iPscDB. Each sub-atlas has its dedicated page that allows users to interactively explore the data. In addition, iPscDB provides all the RDS files used for atlas integration, which are available for browsing and downloading via the Browser interface (Figure 2A). The atlas pages consist of two main panels, each providing distinct information and visualization capabilities. In the UMAP/tSNE panel, users can gain insights into cell type distribution, cell number distribution, the correlation between cell types, and information about gene expression profiles among different cell types using UMAP, bar plots, and heatmaps (Figure 2B). The information panel allows users to access various information on known cell marker genes, differentially expressed cluster marker genes, and samples (Figure 2C). Furthermore, iPscDB supports queries for single genes, whose detailed information can be visualized using violin and box diagrams (Figure 2D). All images can be exported as high-quality vector graphics, while cell types, markers, and sample information can be downloaded in formatted tables.
-
-- Markers exploration:
-The Marker module of iPscDB enables users to explore information on a specific marker gene for each cell type across various plant species. Marker data are organized in a hierarchical tree structure and can be visualized as either a bar chart or a tree list (Figure 3A). Upon selecting a specific cell type, a word cloud is generated to summarize the number of marker genes and their corresponding source datasets (Figure 3B), providing a concise overview of cell-type-specific markers. Furthermore, for each cell type, the associated metadata includes the number of shared plant species and tissues, cell ontology terms, and relevant descriptions (Figure 3C). In this context, users can access detailed information about the gene, including how frequently it is used as a cell-type marker within different publications (Figure 3D). Moreover, the database offers versatile search options for marker genes, allowing queries based on gene name, nucleotide or protein sequence, and associated cell type (Figure 3E). This functionality provides valuable insights into the biological roles and functional relevance of the protein encoded by the gene, thereby deepening the understanding of its potential implications in plant biology.
-
-- Online processing pipeline
-iPscDB offers convenient online processing for sample quality control (QC), integration, cell clustering and cell-type annotation. These procedures are similar to those used to process the input datasets during the construction of iPscDB. Before initiating data analysis in the pipeline, users are required to provide an email address and a job name, and to select the relevant species and tissue information (Figure 4A). The database supports two data upload formats: FASTQ files from raw sequencing data, and matrix files containing CellRanger-processed results (Figure 4B). The pipeline offers two analysis modes: step-by-step and one-step. In the step-by-step mode, users can manually adjust parameters at each stage, while the one-step mode runs the analysis using default settings (Figure 4C). Users can view the analysis results of each step by entering their email address and job name in the results browsing interface. The output formats include box plots, UMAP plots, lists of marker genes, and their corresponding expression heatmaps (Figure 4D). Additionally, users can utilize the integrated online image editing tool provided by iPscDB to customize the appearance and figure legend of UMAP plots (Figure 4E). All related tables and images can be downloaded by clicking on the corresponding links. This streamlined one-step online pipeline significantly lowers the technical hurdles for single-cell transcriptome analysis, enabling researchers without bioinformatics expertise to independently analyze single-cell data. However, the default parameters may not be optimal for all plant datasets and may result in suboptimal analytical outcomes.
-
-- Analysis tools
-The Tools module in iPscDB provides a range of practical features designed to facilitate the analysis and interpretation of single-cell transcriptomic data. iPscDB currently supports individual gene comparisons in root and leaf atlases of Arabidopsis, rice, and maize (Figure 5A). To better understand the trajectories of plant root cells, developmental trajectory analysis of roots from quiescent central cells into various cell types in Arabidopsis, rice, and maize was performed using monocle2. iPscDB also supports developmental trajectory visualization for different tissues in Arabidopsis, rice, and maize. Four models, pseudotime, cell type, and cluster, are provided for users to enable them to identify important differentially expressed genes in the developmental trajectory (Figure 5B). An electronic Single-Cell Pictograph (eSCP) browser was specifically constructed for the visualization of plant roots and leaves at the single-cell level. Users can submit individual genes to the eSCP to visually observe their expression levels and localization in different cells (Figure 5C). Additionally, iPscDB offers two online tools for cell type annotation. The first tool, Plant CellID, accepts the average gene expression profile of a cell cluster and performs two rounds of prediction to assign cell identities. This method has been effectively validated in human cell type annotation tasks[14]. The second tool is a BLAST-like toolkit for scRNA-seq data querying and annotation, which is built upon a neural network-based generative model and a customized cell-to-cell similarity metric[24]. Users upload their single-cell gene expression data in either CSV or h5ad format to utilize these annotation tools (Figure 5D). In summary, the analytical tools integrated within iPscDB enable users to perform a variety of analyses, including multi-gene expression visualization, developmental trajectory inference, and cell type prediction. These functionalities provide valuable insights into single-cell transcriptome datasets and enhance the understanding of cellular characteristics and interrelationships.
-
-- Data download and submission
-The download page in iPscDB allows users to access all integrated data, including gene expression levels and metadata for cells in RDS and gene expression matrix (GE Matrix) formats. These files contain all the essential data for downstream analysis. Additionally, users can download known cell markers and differentially expressed cluster markers amassed from the literature. A backup copy of the data available in iPscDB has been uploaded to Zenodo (https://zenodo.org/), with the ID 8041092. In order to transform iPscDB into a comprehensive community resource, we also accept submissions of plant projects together with the necessary information. All submitted single-cell sequencing data will be processed using our standard procedures. The submitted data will be appropriately categorized and integrated into the database, providing an open platform for sharing and disseminating plant single-cell-related data.
-
-## Discussion
-- The ability to capture cellular behavior at single-cell resolution is crucial to understanding the heterogeneity of tissues in plants. This innovation allows us to identify new cell types, explore cell-cell interactions, and gain insights into how various plant cells work together to drive overall tissue behavior. Currently, several databases dedicated to plant scRNA-seq data have been developed, including scPlantDB<sup>[20]</sup>, PsctH<sup>[18]</sup>, PCMDB<sup>[17]</sup>, and PlantscRNAdb<sup>[19]</sup>. However, our newly developed platform, iPscDB, is a comprehensive single-cell RNA-seq resource specifically tailored for plants, and distinguishes itself from the existing databases in several key aspects (Table 2). Compared with those plant single-cell related databases, iPscDB is the first comprehensive platform that integrates Atlas, CellMarker, and an analysis Pipeline into a unified framework. 
-
-- iPscDB encompasses over 3.5 million cells and 274 thousand cell markers derived from 789 experiments across 23 plant species, making it the largest plant single-cell repository to date. By implementing standardized cell type nomenclature<sup>[25]</sup> and a unified data processing pipeline, iPscDB has enabled the generation of comprehensive cellular atlases at both whole-plant and tissue levels across multiple plant species, representing the first database that responded to the Plant Cell Atlas (PCA) initiative<sup>[21]</sup>. This harmonized and extensive dataset enables multi-layered comparative analyses and far surpasses the species and dataset coverage of existing resources such as scPlantDB<sup>[20]</sup>, thereby substantially enhancing its practical value for researchers in the plant-science community.
-
-- iPscDB offers a more comprehensive online analysis pipeline compared to other plant single-cell databases. While PsctH was among the first to propose a unified data analysis pipeline, it ultimately resorted to providing downloadable scripts for users due to limitations in storage and computing resources<sup>[18]</sup>. Other databases, such as scPlantDB<sup>[20]</sup> and PCMDB<sup>[17]</sup>, focus on providing specific cell-type annotation tools rather than full analysis pipelines, to minimize computational load. In contrast, iPscDB has implemented a robust infrastructure, supported by 100 TB of dedicated storage and a computing cluster comprising three 48-core servers, enabling the platform to handle over 50 concurrent analysis tasks. By offering a web-based and user-friendly analysis platform, iPscDB significantly lowers the barrier for researchers lacking bioinformatics expertise or local computational resources. iPscDB has made single-cell data analysis more accessible and practical for a broader range of users in the plant science community.
-
-- With continuous advancements in plant single-cell research, an increasing volume and diversity of datasets derived from platforms such as single-cell spatial transcriptomics, metabolomics, and ATAC-seq<sup>[26]</sup>, are expected to emerge. This growing complexity presents significant challenges for data collection, integration, storage, and regular updates. Addressing these challenges is a key objective for the next multi-omics version of iPscDB. In line with the goals of the PCA initiative<sup>[21]</sup>, our long term vision is to build a comprehensive single‑cell multi‑omics reference atlas for plants. This resource will enable researchers to dissect the intricate regulatory networks and molecular mechanisms that direct plant development and responses to different environmental stimuli, thereby advancing single‑cell research across the plant biology community. 
-
-## Conclusion
-In summary, iPscDB represents the most comprehensive and scalable platform currently available for plant single-cell transcriptomic research. By integrating over 3.5 million cells from 23 plant species, standardizing data processing workflows, and offering a user-friendly web-based analysis interface, iPscDB bridges the gap between large-scale single-cell data generation and practical biological interpretation. Its unique combination of cell atlas construction, marker curation, and online computational tools makes it a valuable resource for both experimental and computational plant biologists. Looking ahead, the planned integration of single-cell multi-omics data, including spatial transcriptomics, metabolomics, and ATAC-seq, will further elevate the utility of iPscDB, positioning it as a cornerstone resource for exploring plant cellular complexity and regulatory networks at unprecedented resolution.
-
-## Methods
-- Data source
-A total of 3,537,348 cells and 274,430 cell markers from 89 scRNA-seq datasets across 23 species were manually collected from published plant studies and integrated into the iPscDB database (Table 2). A total of 112 single-cell sequencing-related studies for plants were retrieved from PubMed and ResearchGate (Supplementary Table S1). After manual curation to exclude reviews and method-related studies, 92 publications were obtained. The corresponding raw single-cell sequencing data were downloaded from SRA (Sequence Read Archive of NCBI)<sup>[27]</sup>, ArrayExpress<sup>[28]</sup>, GSA (Genome Sequence Archive of CNCB)<sup>[29]</sup>, and other public resources. Eighty-nine single-cell sequencing datasets were obtained (Supplementary Table S2).  In addition, we extracted cell markers from the amassed publications and retrieved marker genes from several existing plant cell databases. After removing redundant markers, a curated set of non-redundant markers was compiled to support subsequent cell type annotation. To ensure data comprehensiveness, we integrated and curated information from several existing databases, including scPlantDB<sup>[20]</sup> and PCMDB<sup>[17]</sup>, while preserving some of their original data presentation formats. We express our sincere gratitude to these resources for their valuable contributions.
-
-- Genome annotation data
-To construct a robust and consistent data processing workflow, we reviewed the preprocessing strategies employed by different platforms<sup>[26,30,31]</sup>, and selected the most widely used versions of genome sequences and gene annotations for each of the 23 species (Supplementary Table S3). The genome sequences and gene annotations for Arabidopsis were obtained from The Arabidopsis Information Resource (TAIR)<sup>[32]</sup>. For Oryza sativa, the genome sequences and gene annotations were sourced from the Rice Annotation Project (RAP-db)<sup>[33]</sup>. Similarly, Zea mays genome sequences and gene annotations were downloaded from Ensembl Plants<sup>[34]</sup>, and those for Solanum lycopersicum were obtained from the Sol Genomics Network<sup>[35]</sup>. As for the remaining species, we acquired the genome sequences and gene annotation versions from relevant literature<sup>[36–40]</sup>.
-
-- Data preprocessing and quality control
-To ensure consistency between different datasets and minimize batch effects, all single cell related studies were reanalyzed using a unified pipeline. For data in SRA format, we converted the data to fastq using the SRA-toolkit v3.0.6. Different demultiplexing methods were applied depending on the original sequencing technologies used. For the 10x Genomics platform, cell de-barcoding and unique molecular identifier (UMIs) determination were performed by Cell Ranger v3.2 (https://www.10xgenomics.com/support/jp/software/cell-ranger/). For the Drop-seq platform, demultiplexing was employed using Drop-seq tools v2.4.0 (http://mccarrolllab.org/wp-content/uploads/2016/03/Drop-seqAlignmentCookbookv1.2Jan2016.pdf). For other platforms such as CEL-seq2 and Seq-Well, UMI_tools<sup>[41]</sup> were used for demultiplexing. After de-barcoding, reads with cell barcodes and UMIs were mapped to the related reference genome using STAR v020201<sup>[42]</sup> and then assigned to corresponding genes with featureCounts<sup>[43]</sup>. Cell-level quality control was performed by filtering based on mitochondrial mRNA counts, chloroplast mRNA counts, and unique feature counts in Seurat. We fitted normal distributions to all these count distributions and applied cut-offs based on Z scores<sup>[14]</sup>. Cells with high mitochondrial and chloroplast mRNA counts were removed, as well as cells with excessively high or low unique feature counts (|Z score| > 1.64, qnorm = (0.05, 0.95)<sup>[44]</sup>. We also filtered out samples with fewer than 500 cells remaining. 
-
-- Single-cell sequencing data analysis
-Different sequencing data analysis integration tools were compared and Harmony (https://github.com/immunogenomics/harmony) was selected due to its higher performance. NormalizeData, FindVariableFeatures, and ScaleData processes were performed by Seurat, and Harmony was employed for integration of data from different studies. Clustering trees<sup>[45]</sup> was used to determine the optimal resolution for FindCluster. Dimension reduction was conducted using Principal Component Analysis (PCA) and the top 50 principal components were utilized for uniform manifold approximation and projection (UMAP) and t-distributed stochastic neighbor embedding (tSNE). After data integration between different studies, cell atlases of species and sub-atlases of tissues were constructed. 
-
-- Cell type annotation
-A high-quality cell type reference database is essential to ensure successful automatic cell type annotation. Therefore, we collected known cell marker genes and differentially expressed cluster marker genes used for each published study (Supplementary Table S4, Supplementary Table S5). The marker genes reported in the corresponding study were used to annotate each cluster. All cell types were unified based on the Plant Ontology database<sup>[25]</sup> to ensure compatibility between different studies. After integrating these annotated projects for each plant, the generated reference datasets were used for cell type annotation. We developed a cell-type identification pipeline based on these reference datasets to annotate single-cell data without cluster labels. The average gene expression of a cell cluster was used to compute the Spearman correlation between the input and reference datasets using overlapping genes<sup>[16]</sup>. Cell types with correlation coefficients greater than 0.6 or ranked within the top 5 were considered the predicted cell types for the input dataset<sup>[14]</sup>. We also integrated the single-cell annotation tool, Plant CellID, within the iPscDB platform to facilitate accurate cell type identification.
-
-- Database development
-iPscDB is built on a robust and scalable architecture. MySQL (https://www.mysql.com/) serves as the primary database engine, while Django (https://www.djangoproject.com/) is used as the back-end web framework. The front-end web interface was developed using Vue.js (https://vuejs.org/), complemented by ElementUI (https://element.eleme.cn) and Bootstrap (https://getbootstrap.com/) for component design and responsive layout. For data visualization, iPscDB integrates several JavaScript libraries, including ECharts (https://echarts.apache.org/), Plotly.js (https://plotly.com/), and D3.js (https://d3js.org/), which collectively provide interactive and intuitive visual representations of complex single-cell data. The online data analysis pipeline is powered by Celery (https://docs.celeryq.dev/), with RabbitMQ (https://www.rabbitmq.com/) as the message broker. This producer–queue–consumer model ensures efficient task scheduling, distribution, and execution within a lightweight computational cluster environment. iPscDB can be accessed at http://www.tobaccodb.org/ipscdb/homePage and requires no registration.
-
-## Acknowledgements
-Not applicable.
-
-## Author contributions
-PL, PJC and JJJ designed the database.  SJW, HS, ZFL, HL, QW, JCZ and YLX collected the publications and selected markers. PL, YYW, XWS, RTH and SZY constructed the process pipeline. PL, HS and SZY analyzed the single-cell data. PL, JJJ, JMT, RTH and YYW built the database and its web interface. PL and JJJ wrote the manuscript. XWS, PJC and JMT reviewed the manuscript. All authors have contributed to the manuscript and approved the submitted version.
-
-## Data and code availability
-All single-cell data and markers in iPscDB are free for academic research. All the data could be downloaded from iPscDB https://www.tobaccodb.org/ipscdb/homePage) and Zenodo (https://doi.org/10.5281/zenodo.8041092). Communication and interaction can be carried out via GitHub (https://github.com/TobaccoDB/iPscDB) or Twitter (https://x.com/TobaccoDB).
-
-## Funding
-This project was supported by the Zhengzhou Tobacco Research Institute (902023CK0890, 110202201001(JY-01), 110202401003(JY-03)), Beijing Life Science Academy (2024900CC0270, 2024200CC0130).
-
-## Competing interests
-The authors declare that they have no competing interests.
-
-## References
-
-- [1]	Cao Y, Zhu J, Jia P, et al. scRNASeqDB: A Database for RNA-Seq Based Gene Expression Profiles in Human Single Cells [J]. Genes, 2017, 8(12): 368.
-- [2]	Rich-Griffin C, Stechemesser A, Finch J, et al. Single-Cell Transcriptomics: A High-Resolution Avenue for Plant Functional Genomics. [J]. Trends in Plant Science, 2019, 25(2): 186–197.
-- [3]	Wang Y, Huan Q, Li K, et al. Single-cell transcriptome atlas of the leaf and root of rice seedlings [J]. Journal of Genetics and Genomics, 2021, 48(10): 881–898.
-- [4]	Denyer T, Ma X, Klesen S, et al. Spatiotemporal Developmental Trajectories in the Arabidopsis Root Revealed Using High-Throughput Single-Cell RNA Sequencing. [J]. Developmental cell, 2019, 48(6): 840-852.e5.
-- [5]	Zhang T-Q, Xu Z-G, Shang G-D, et al. A Single-Cell RNA Sequencing Profiles the Developmental Landscape of Arabidopsis Root. [J]. Molecular Plant, 2019, 12(5): 648–660.
-- [6]	Jean-Baptiste K, McFaline-Figueroa J L, Alexandre C M, et al. Dynamics of Gene Expression in Single Root Cells of Arabidopsis thaliana [J]. The Plant Cell, 2019, 31(5): 993–1011.
-- [7]	Zhang T-Q, Chen Y, Wang J-W. A single-cell analysis of the Arabidopsis vegetative shoot apex. [J]. Developmental Cell, 2021, 56(7): 1056-1074.e8.
-- [8]	Bezrutczyk M, Zöllner N R, Kruse C P S, et al. Evidence for phloem loading via the abaxial bundle sheath cells in maize leaves [J]. The Plant Cell, 2021, 33(3): 531–547.
-- [9]	Lopez-Anido C B, Vatén A, Smoot N K, et al. Single-Cell Resolution of Lineage Trajectories in the Arabidopsis Stomatal Lineage and Developing Leaf [Z]. Cold Spring Harbor Laboratory, 2020(2020–09–09).
-- [10]	Xu X, Crow M, Rice B R, et al. Single-cell RNA sequencing of developing maize ears facilitates functional analysis and trait candidate gene discovery [J]. Developmental Cell, 2021, 56(4): 557-568.e6.
-- [11]	Shulse C N, Cole B J, Ciobanu D, et al. High-Throughput Single-Cell Transcriptome Profiling of Plant Cell Types [J]. Cell Reports, 2019, 27(7): 2241-2247.e4.
-- [12]	Shahan R, Hsu C-W, Nolan T M, et al. A single-cell Arabidopsis root atlas reveals developmental trajectories in wild-type and cell identity mutants. [J]. Developmental Cell, 2022, 57(4): 543-560.e9.
-- [13]	Pan L, Tang B, Zhang X, et al. Comprehensive analysis of multi‐omics single‐cell data using the single‐cell analyst [J]. iMeta, 2025.
-- [14]	Li M, Zhang X, Ang K S, et al. DISCO: a database of Deeply Integrated human Single-Cell Omics data [J]. Nucleic Acids Research, 2021, 50(D1): D596–D602.
-- [15]	Guo Q, Wang P, Liu Q, et al. CellTracer: a comprehensive database to dissect the causative multilevel interplay contributing to cell development trajectories [J]. Nucleic Acids Research, 2022, 51(D1): D861–D869.
-- [16]	Wang R, Zhang P, Wang J, et al. Construction of a cross-species cell landscape at single-cell level [J]. Nucleic Acids Research, 2022, 51(2): 501–516.
-- [17]	Jin J, Lu P, Xu Y, et al. PCMDB: a curated and comprehensive resource of plant cell markers [J]. Nucleic Acids Research, 2021, 50(D1): D1448–D1455.
-- [18]	Xu Z, Wang Q, Zhu X, et al. Plant Single Cell Transcriptome Hub (PsctH): an integrated online tool to explore the plant single‐cell transcriptome landscape [J]. Plant Biotechnology Journal, 2021, 20(1): 10–12.
-- [19]	Chen H, Yin X, Guo L, et al. PlantscRNAdb: A database for plant single-cell RNA analysis. [J]. Molecular Plant, 2021, 14(6): 855–857.
-- [20]	He Z, Luo Y, Zhou X, et al. scPlantDB: a comprehensive database for exploring cell types and markers of plant cell atlases [J]. Nucleic Acids Research, 2023, 52(D1): D1629–D1638.
-- [21]	Birnbaum K D, Otegui M S, Bailey-Serres J, et al. The Plant Cell Atlas: focusing new technologies on the kingdom that nourishes the planet [J]. Plant Physiology, 2021, 188(2): 675–679.
-- [22]	Timmermans M C P. PscB: A Browser to Explore Plant Single Cell RNA-Sequencing Data Sets - [J]. Plant Physiology, 2020;183(2):464-467.
-- [23]	Lewsey M G, Yi C, Berkowitz O, et al. scCloudMine: A cloud-based app for visualization, comparison, and exploration of single-cell transcriptomic data. [J]. Plant Communications, 2022, 3(4): 100302.
-- [24]	Cao Z-J, Wei L, Lu S, et al. Searching large-scale scRNA-seq databases via unbiased cell embedding with Cell BLAST [J]. Nature Communications, 2020, 11(1).
-- [25]	Avraham S, Tung C-W, Ilic K, et al. The Plant Ontology Database: a community resource for plant structure and developmental stages controlled vocabulary and annotations [J]. Nucleic Acids Research, 2008, 36(suppl_1): D449–D454.
-- [26]	Fahlgren N, Kapoor M, Yordanova G, et al. Toward a data infrastructure for the Plant Cell Atlas [J]. Plant Physiology, 2022, 191(1): 35–46.
-- [27]	Leinonen R, Sugawara H, Shumway M, et al. The Sequence Read Archive [J]. Nucleic Acids Research, 2010, 39(Database): D19–D21.
-- [28]	Kolesnikov N, Hastings E, Keays M, et al. ArrayExpress update—simplifying data submissions [J]. Nucleic Acids Research, 2014, 43(D1): D1113–D1116.
-- [29]	Wang Y, Song F, Zhu J, et al. GSA: Genome Sequence Archive [J]. Genomics, Proteomics &amp; Bioinformatics, 2017, 15(1): 14–18.
-- [30]	Vong G Y W, McCarthy K, Claydon W, et al. AraLeTA: An Arabidopsis leaf expression atlas across diurnal and developmental scales [J]. Plant Physiology, 2024, 195(3): 1941–1953.
-- [31]	Han X, Zhang Y, Lou Z, et al. Time series single-cell transcriptional atlases reveal cell fate differentiation driven by light in Arabidopsis seedlings [J]. Nature Plants, 2023, 9(12): 2095–2109.
-- [32]	Lamesch P, Berardini T Z, Li D, et al. The Arabidopsis Information Resource (TAIR): improved gene annotation and new tools [J]. Nucleic Acids Research, 2011, 40(D1): D1202–D1210.
-- [33]	Sakai H, Lee S S, Tanaka T, et al. Rice Annotation Project Database (RAP-DB): An Integrative and Interactive Database for Rice Genomics [J]. Plant and Cell Physiology, 2013, 54(2): e6–e6.
-- [34]	Bolser D M, Staines D M, Perry E, et al. Ensembl Plants: Integrating Tools for Visualizing, Mining, and Analyzing Plant Genomic Data. [M]//Methods in molecular biology (Clifton, N.J.). New York, NY: Springer New York, 2016: 1–31.
-- [35]	Mueller L A, Solow T H, Taylor N, et al. The SOL Genomics Network. A Comparative Resource for Solanaceae Biology and Beyond [J]. Plant Physiology, 2005, 138(3): 1310–1317.
-- [36]	Liu C, Leng J, Li Y, et al. A spatiotemporal atlas of organogenesis in the development of orchid flowers [J]. Nucleic Acids Research, 2022, 50(17): 9724–9737.
-- [37]	Bai Y, Liu H, Lyu H, et al. Development of a single-cell atlas for woodland strawberry (Fragaria vesca) leaves during early Botrytis cinerea infection using single-cell RNA-seq [J]. Horticulture Research, 2022, 9.
-- [38]	Conde D, Triozzi P M, Pereira W J, et al. Single-nuclei transcriptome analysis of the shoot apex vascular system differentiation in Populus [J]. Development, 2022, 149(21).
-- [39]	Chen Y, Tong S, Jiang Y, et al. Transcriptional landscape of highly lignified poplar stems at single-cell resolution [J]. Genome Biology, 2021, 22(1).
-- [40]	Kang M, Choi Y, Kim H, et al. Single‐cell RNA‐sequencing of Nicotiana attenuata corolla cells reveals the biosynthetic pathway of a floral scent [J]. New Phytologist, 2022, 234(2): 527–544.
-- [41]	Smith T, Heger A, Sudbery I. UMI-tools: Modelling sequencing errors in Unique Molecular Identifiers to improve quantification accuracy [Z]. Cold Spring Harbor Laboratory, 2016(2016–05–09).
-- [42]	Dobin A, Davis C A, Schlesinger F, et al. STAR: ultrafast universal RNA-seq aligner [J]. Bioinformatics, 2012, 29(1): 15–21.
-- [43]	Liao Y, Smyth G K, Shi W. featureCounts: an efficient general purpose program for assigning sequence reads to genomic features [J]. Bioinformatics, 2013, 30(7): 923–930.
-- [44]	Hao Y, Hao S, Andersen-Nissen E, et al. Integrated analysis of multimodal single-cell data. [J]. Cell, 2021, 184(13): 3573-3587.e29.
-- [45]	Zappia L, Oshlack A. Clustering trees: a visualization for evaluating clusterings at multiple resolutions [J]. GigaScience, 2018, 7(7).
-
-## Tables
-- Table1. Data summary of iPscDB
-
-Species                       | Cells     |   Experiments |   Datasets |   Cell types | Cell markers   |   Conditions |
-|:------------------------------|:----------|--------------:|-----------:|-------------:|:---------------|-------------:|
-Arabidopsis thaliana          | 1,995,336 |           368 |         39 |           98 | 168,809        |           32 |
-Bombax ceiba                  | 6,661     |             1 |          1 |            5 | 664            |            1 |
-Brassica rapa                 | 22,741    |             9 |          2 |           12 | 3,450          |            1 |
-Catharanthus roseus           | 41,653    |            51 |          2 |           28 | 1,964          |            1 |
-Fragaria vesca                | 46,028    |             3 |          1 |           13 | 4,487          |            3 |
-Glycine max                   | 53,972    |             5 |          2 |           22 | 1,712          |            3 |
-Gossypium bickii              | 12,895    |             1 |          1 |           14 | 3,306          |            1 |
-Gossypium hirsutum            | 125,108   |            20 |          5 |           34 | 6,318          |            2 |
-Manihot esculenta             | 35,524    |             8 |          1 |           20 | 5,253          |            1 |
-Marchantia polymorpha         | 46,136    |            46 |          1 |           11 | 2,861          |            1 |
-Medicago truncatula           | 24,978    |             6 |          1 |           15 | 2,861          |            2 |
-Nicotiana attenuata           | 3,111     |             3 |          1 |            9 | 992            |            3 |
-Nicotiana tabacum             | 12,698    |             3 |          1 |           23 | 2,381          |            1 |
-Oryza sativa                  | 577,636   |            52 |          7 |           59 | 17,937         |            5 |
-Phalaenopsis Big Chili        | 7,619     |             3 |          1 |            8 | 921            |            1 |
-Phyllostachys edulis          | 14,316    |             2 |          1 |           10 | 738            |            1 |
-Populus alba var. pyramidalis | 7,345     |             2 |          1 |           17 | 11,164         |            1 |
-Populus alba × glandulosa     | 24,016    |             4 |          1 |           10 | 117            |            1 |
-Populus tremula × alba        | 9,287     |             1 |          1 |           15 | 823            |            1 |
-Populus trichocarpa           | 20,442    |            48 |          1 |           11 | 1,103          |            1 |
-Solanum lycopersicum          | 63,405    |            22 |          4 |           21 | 4,879          |            2 |
-Triticum aestivum             | 6,875     |             1 |          1 |           26 | 7,792          |            1 |
-Zea mays                      | 379,566   |           115 |         12 |           61 | 23,898         |            5 |
-
-- Table2. Summary of comparison between iPscDB and published databases
-
-| Class              | Item                 | iPscDB    | scPlantDB   | PscB     | PCMDB   | PlantscRNAdb   | Single-cell Analyst   | DISCO    |
-|:-------------------|:---------------------|:----------|:------------|:---------|:--------|:---------------|:----------------------|:---------|
-| Data Statistics    | Category             | Plant     | Plant       | Plant    | Plant   | Plant          | Human                 | Human    |
-| Data Statistics    | Species              | 23        | 17          | 1        | 6       | 4              | 1                     | 1        |
-| Data Statistics    | Tissue atlas         | 35        | /           | 1        | /       | /              | 92                    | 28       |
-| Data Statistics    | Global atlas         | 23        | /           | 0        | /       | /              | 3                     | 1        |
-| Data Statistics    | Cell                 | 3,537,348 | >2 mil.     | >220,000 | /       | /              | >200 mil.             | >51 mil. |
-| Data Statistics    | Cell type            | 269       | 259         | 1        | 263     | 128            | 417                   | 461      |
-| Data Statistics    | Samples              | 691       | 367         | 1        | /       | /              | /                     | 11,968   |
-| Data Statistics    | Cell markers         | 274,430   | 229,551     | /        | 81,117  | 26,326         | /                     | 419,499  |
-| Functional modules | Sequence search      | √         | √           | √        | √       | √              | /                     | √        |
-| Functional modules | Marker exploration   | √         | √           | √        | √       | √              | √                     | √        |
-| Functional modules | Atlas exploration    | √         | /           | /        | /       | /              | √                     | √        |
-| Functional modules | Cell type annotation | √         | √           | /        | /       | /              | √                     | √        |
-| Functional modules | Various analyses     | √         | √           | /        | /       | /              | √                     | √        |
-| On-line process    | Processing pipline   | √         | /           | /        | /       | /              | √                     | /        |
-| On-line process    | Plot editor          | √         | /           | /        | /       | /              | √                     | /        |
-| On-line process    | One-step analysis    | √         | /           | /        | /       | /              | √                     | /        |
-
-## Figure legends
-- Figure 1. The overall design of the iPscDB database.
-<img width="5222" height="3810" alt="Figure1" src="https://github.com/user-attachments/assets/db3eae7d-37d6-46e3-aded-7787614bf375" />
-- Figure 2. The dedicated function of atlases and genes. (A) Species atlas information and a summary of datasets deposited in iPscDB. (B) The UMAP display of Arabidopsis whole-plant atlas. (C) Detailed information on marker genes for Arabidopsis (The orange star indicates that the marker is a classic marker). (D) The expression pattern of a queried single gene RCI3 (AT1G05260) in the Arabidopsis whole-plant atlas.
-<img width="5222" height="3810" alt="Figure2" src="https://github.com/user-attachments/assets/c6fb93c8-57d0-480d-a6d3-c3a3fb732f71" />
-- Figure 3. The Marker module for cell marker exploration. (A) Overview of annotated cell types in 23 specific plant species. (B) Detailed information of a specific cell type (Arabidopsis root epidermis as an example). (C) Summarized marker information of a specific cell type in Arabidopsis. (D) Characterization and analysis of a specific marker gene. (E) Search function using different search engines.
-<img width="5222" height="3832" alt="Figure3" src="https://github.com/user-attachments/assets/504dfe6d-6015-4828-9804-74113cb47f98" />
-- Figure 4. The input and output steps for the online data analysis pipeline. (A) Workflow and user input requirements of the online analysis pipeline. (B) User-defined analysis parameters via online data processing. (C) Supports drag-and-drop uploads of various file formats. (D) Interactive interface for viewing job completion and results. (E) Module for online UMAP figure editing.
-<img width="5222" height="3897" alt="Figure4" src="https://github.com/user-attachments/assets/ef611615-0f06-4f55-b230-8b68ffdc82a9" />
-- Figure 5. Diverse primary analysis tools of iPscDB. (A) The cross-species gene expression pattern of Gossypium hirsutum in Arabidopsis, rice and maize; (B) Expression pattern of GIF2 (AT1G01160) in Arabidopsis root as visualized in eSCP. (C) Developmental trajectory of the atrichoblast cell type in Arabidopsis root and information on differentially expressed genes (DEGs). (D) Cell type identification following two-rounds of prediction with Plant CellID.
-<img width="5222" height="3916" alt="Figure5" src="https://github.com/user-attachments/assets/6dcdac03-359f-4eab-939a-72da3bac8910" />
+### Browse
+- Function entry: Click the "Browse" tab in the navigation bar.
+- Main function:
+  - Species,Datasets,Experiments,Technologies,Atlases,Classic Markers,Marker genes,Cells,Cell types Quantity display
+  - Cells,Sequencing technology,Markers Pie chart presentation
+  - Dataset information List,support Species、Tissue、BioProject、Dataset search and data download
+### Atlas
+- Function entry: Click the "Atlas" tab in the navigation bar.
+- Main function:
+  - Species Atlas list
+  - Tissue Atlas list
+  - Click "Download" in each Atlas to download the corresponding data.
+  - Click "Explore" in each Atlas to enter the corresponding Atlas details page.
+### Explore
+- Function entry: Click the "Explore" tab in the navigation bar.
+- Main function:
+  - Support Umap and tSNE selection.
+  - Marker list presentation.
+  - Detail list presentation.
+  - Support View by filtering and Gene input click GO button to enter gene details.
+### Marker
+- Function entry: Click the "Marker" tab in the navigation bar.
+- Main function:
+  - Species selection.
+  - Classic Markers and Marker genes quantity presentation.
+  - Click on the tissue details to show.
+### Search
+- Function entry: Click the "Search" tab in the navigation bar.
+- Main function:
+  - By marker gene (identifier or keyword) search.
+  - By sequence (Blast) search.
+  - By cell type search.
+  - Input or select the corresponding data and click the Search button to enter the list page.
+  - In the list page, click on the corresponding GeneID to enter the details page.
+### Pipeline
+#### Browse results
+- Function entry: Click the "Pipeline -> Browse results" tab in the navigation bar.
+- Main function:
+  - Input E-mail and Analysis name, click Search to perform the task search.
+  - Click Refresh button to reset the input E-mail and Analysis name.
+  - Click Operation in the view button to enter the view task page.
+  - Click Operation in the delete button to delete the task.
+#### Start with fastq files
+- Function entry: Click the "Pipeline -> Start with fastq files" tab in the navigation bar.
+- Main function:
+  - Cell ranger: Input Email, Analysis name, Species, Tissue, create an analysis task. Users upload two sets of analysis data, Data1 and Data2. For each set, they need to input Sample Name data and can upload up to three sets of analysis data files. Each set of data needs to upload four data files, namely R1, L1, R2, L2, for data analysis. And it supports viewing of the analysis results.
+  - Sample QC: Input PT, MT and QC filter data for data analysis, And it supports viewing of the analysis results.
+  - Data process: Input parameters such as Normalize Data, FindVariableFeatures Data, Scale Data and Neighbor Data for data analysis. And it supports viewing of the analysis results.
+  - Cluster: Input the Resolution parameter for data analysis, And it supports viewing of the analysis results.
+  - Cell Annotation: Can modify the parameters of the UMAP graph through the icon tools and download the heatmap, dotplot and tracksplot graphs.
+#### Start with cellranger files
+- Function entry: Click the "Pipeline -> Start with cellranger files" tab in the navigation bar.
+- Main function:
+  - Sample QC: Inputs Email, Analysis name, Species, Tissue to create an analysis task. The user then uploads two sets of analysis data, Data1 and Data2. For each set, the Sample Name data needs to be input and the File Type needs to be selected. If the option "GZ" is chosen, Barcodes, Features and Matrix need to be uploaded. If the option "H5AD" is chosen, the H5ad file needs to be uploaded. The analysis task can be started by inputting mt and pt data. The analysis results can also be viewed.
+  - Data process: Input parameters such as Normalize Data, FindVariableFeatures Data, Scale Data and Neighbor Data for data analysis. And it supports viewing of the analysis results.
+  - Cluster: Input the Resolution parameter for data analysis, And it supports viewing of the analysis results.
+  - Cell Annotation: Can modify the parameters of the UMAP graph through the icon tools and download the heatmap, dotplot and tracksplot graphs.
+### Tools
+#### Tools->Cross-species gene expression
+- Function entry: Click the Tools->Cross-species gene expression tab in the navigation bar.
+- Main function: Select "Specie", "Tissue" and "Input GeneID", then click "GO" to display the UMAP visualization of cell types, Gene expression, and Expression in cell types data presentation.
+#### Tools->Developmental trajectory
+- Function entry: Click the Tools->Developmental trajectory tab in the navigation bar.
+- Main function: Select "Specie", "Tissue" and "Cell type", then click "GO" to display the Pseudotime, State, Cell Type, Cluster graph.
+#### Tools->electronic Single-Cell Pictograph
+- Function entry: Click the Tools->electronic Single-Cell Pictograph tab in the navigation bar.
+- Main function: Select "Specie", "Tissue" and "Input GeneID". Then click "GO".
+#### Tools->Plant CelliD
+- Function entry: Click the Tools->Plant CelliD tab in the navigation bar.
+- Main function: Select "Specie", "Tissue" and "Upload File". Click "Run" to perform the comparison, and click "Download" to obtain the result.
+#### Tools->Plant Cell-Blast
+- Function entry: Click the Tools->Plant Cell-Blast tab in the navigation bar.
+- Main function: Select "Specie", "Tissue" and upload files. Click "Run". Through the process of START -> HITS -> PREDICT -> PREDICTIONS, the results will be compared.
+  
+### Documentation
+- Function entry: Click the "Documentation" tab in the navigation bar.
+- Main function: Overview,Datasets and usage,Contact us,Submit data display.
