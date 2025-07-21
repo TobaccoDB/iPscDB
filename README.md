@@ -14,6 +14,8 @@ The rapid advancement of single-cell technologies has significantly enhanced our
   - Plant CELLiD.
   - Statistics.
   - Follow iPscDB.
+  - Update log.
+  - Citation.
 
 ### Browse
 - Function entry: Click the "Browse" tab in the navigation bar.
