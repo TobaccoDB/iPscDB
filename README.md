@@ -15,16 +15,16 @@ The rapid advancement of single-cell technologies has significantly enhanced our
   - Follow iPscDB.
   - Update log.
   - Citation.
-<img width="1325" height="649" alt="878fa354bf85a510b9109264e0745e1b" src="https://github.com/user-attachments/assets/2f0ef830-7609-4096-966a-978b3a8b3ba5" />
-<img width="1243" height="810" alt="2fb58b67df01c58aa34158345542b09b" src="https://github.com/user-attachments/assets/890a5d94-570a-420d-a045-1e826bef6339" />
+  <img width="1325" height="649" alt="878fa354bf85a510b9109264e0745e1b" src="https://github.com/user-attachments/assets/2f0ef830-7609-4096-966a-978b3a8b3ba5" />
+  <img width="1243" height="810" alt="2fb58b67df01c58aa34158345542b09b" src="https://github.com/user-attachments/assets/890a5d94-570a-420d-a045-1e826bef6339" />
 ### Browse
 - Function entry: Click the "Browse" tab in the navigation bar.
 - Main function:
   - Species,Datasets,Experiments,Technologies,Atlases,Classic Markers,Marker genes,Cells,Cell types Quantity display
   - Cells,Sequencing technology,Markers Pie chart presentation
   - Dataset information List,support Species、Tissue、BioProject、Dataset search and data download
-<img width="1242" height="725" alt="b9b0bf2d820fb92ea99a43af343cc549" src="https://github.com/user-attachments/assets/9c53a67d-cbaa-4507-af9e-7da8bf251970" />
-<img width="1242" height="725" alt="8987c61a31c939771862a287cdd3bc02" src="https://github.com/user-attachments/assets/5512042c-e272-4344-a8f1-e43e8f949b6c" />
+  <img width="1242" height="725" alt="b9b0bf2d820fb92ea99a43af343cc549" src="https://github.com/user-attachments/assets/9c53a67d-cbaa-4507-af9e-7da8bf251970" />
+  <img width="1242" height="725" alt="8987c61a31c939771862a287cdd3bc02" src="https://github.com/user-attachments/assets/5512042c-e272-4344-a8f1-e43e8f949b6c" />
 ### Atlas
 - Function entry: Click the "Atlas" tab in the navigation bar.
 - Main function:
@@ -32,11 +32,11 @@ The rapid advancement of single-cell technologies has significantly enhanced our
   - Tissue Atlas list
   - Click "Download" in each Atlas to download the corresponding data.
   - Click "Explore" in each Atlas to enter the corresponding "Explore" details page.
-<img width="5222" height="3810" alt="Figure2" src="https://github.com/user-attachments/assets/58f4e7d9-0fc6-45e8-860e-7cd523980916" />
+  <img width="5222" height="3810" alt="Figure2" src="https://github.com/user-attachments/assets/58f4e7d9-0fc6-45e8-860e-7cd523980916" />
 ### Marker 
 - Function entry: Click the "Marker" tab in the navigation bar.
 - Main function:The Marker module for cell marker exploration. (A) Overview of annotated cell types in 23 specific plant species. (B) Detailed information of a specific cell type (Arabidopsis root epidermis as an example). (C) Summarized marker information of a specific cell type in Arabidopsis. (D) Characterization and analysis of a specific marker gene. (E) Search function using different search engines.
-<img width="5222" height="3832" alt="Figure3" src="https://github.com/user-attachments/assets/51fc4fa8-80c8-4d9c-9a71-09df2ff01b2d" />
+  <img width="5222" height="3832" alt="Figure3" src="https://github.com/user-attachments/assets/51fc4fa8-80c8-4d9c-9a71-09df2ff01b2d" />
 ### Pipeline
 #### Browse results
 - Function entry: Click the "Pipeline -> Browse results" tab in the navigation bar.
@@ -45,15 +45,15 @@ The rapid advancement of single-cell technologies has significantly enhanced our
   - Click Refresh button to reset the input E-mail and Analysis name.
   - Click Operation in the view button to enter the view task page.
   - Click Operation in the delete button to delete the task.
-<img width="2446" height="1270" alt="图片1" src="https://github.com/user-attachments/assets/0ddceebb-ae6f-4db4-90ae-4c6f54fb65e0" />
+  <img width="2446" height="1270" alt="图片1" src="https://github.com/user-attachments/assets/0ddceebb-ae6f-4db4-90ae-4c6f54fb65e0" />
 #### Start new job
 - Function entry: Click the "Pipeline -> Start with fastq files" or "Pipeline -> Start with cellranger files" tab in the navigation bar.
 - Main function: The input and output steps for the online data analysis pipeline. (A) Workflow and user input requirements of the online analysis pipeline. (B) User-defined analysis parameters via online data processing. (C) Supports drag-and-drop uploads of various file formats. (D) Interactive interface for viewing job completion and results. (E) Module for online UMAP figure editing.
-<img width="5222" height="3897" alt="Figure4" src="https://github.com/user-attachments/assets/903eda3c-e911-40ed-838d-4b9894890c37" />
+  <img width="5222" height="3897" alt="Figure4" src="https://github.com/user-attachments/assets/903eda3c-e911-40ed-838d-4b9894890c37" />
 ### Tools
 - Function entry: Click the Tools tab in the navigation bar.
 - Main function: Diverse primary analysis tools of iPscDB. (A) The cross-species gene expression pattern of Gossypium hirsutum in Arabidopsis, rice and maize; (B) Expression pattern of GIF2 (AT1G01160) in Arabidopsis root as visualized in eSCP. (C) Developmental trajectory of the atrichoblast cell type in Arabidopsis root and information on differentially expressed genes (DEGs). (D) Cell type identification following two-rounds of prediction with Plant CellID.
-<img width="5222" height="3916" alt="Figure5" src="https://github.com/user-attachments/assets/25a4c40a-0024-4a3f-8d09-a16ef662e33f" />
+  <img width="5222" height="3916" alt="Figure5" src="https://github.com/user-attachments/assets/25a4c40a-0024-4a3f-8d09-a16ef662e33f" />
 ### Documentation
 - Function entry: Click the "Documentation" tab in the navigation bar.
 - Main function: Display Overview,Datasets and usage,Contact us,Submit data.
