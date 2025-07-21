@@ -27,11 +27,7 @@ The rapid advancement of single-cell technologies has significantly enhanced our
   <img width="1242" height="725" alt="8987c61a31c939771862a287cdd3bc02" src="https://github.com/user-attachments/assets/5512042c-e272-4344-a8f1-e43e8f949b6c" />
 ### Atlas
 - Function entry: Click the "Atlas" tab in the navigation bar.
-- Main function:
-  - Species Atlas list
-  - Tissue Atlas list
-  - Click "Download" in each Atlas to download the corresponding data.
-  - Click "Explore" in each Atlas to enter the corresponding "Explore" details page.
+- Main function: The dedicated function of atlases and genes. (A) Species atlas information and a summary of datasets deposited in iPscDB. (B) The UMAP display of Arabidopsis whole-plant atlas. (C) Detailed information on marker genes for Arabidopsis (The orange star indicates that the marker is a classic marker). (D) The expression pattern of a queried single gene RCI3 (AT1G05260) in the Arabidopsis whole-plant atlas.
   <img width="5222" height="3810" alt="Figure2" src="https://github.com/user-attachments/assets/58f4e7d9-0fc6-45e8-860e-7cd523980916" />
 ### Marker 
 - Function entry: Click the "Marker" tab in the navigation bar.
